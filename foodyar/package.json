@@ -1,0 +1,13 @@
+{
+  "name": "foodyar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "npx sass --watch assets/scss:assets/css",
+    "pug": "npx pug-cli -w -P -o ./ assets/pug/index.pug"
+  },
+  "keywords": [],
+  "author": "msuryaditriputraR",
+  "license": "ISC"
+}
