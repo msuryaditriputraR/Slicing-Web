@@ -9,10 +9,10 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --title-font-size: 3rem;
+    --title-font-size: 2.85rem;
     --medium-font-size: 1.85rem;
     --h2-font-size: 1.5rem;
-    --normal-font-size: 1.15rem;
+    --normal-font-size: 1.2rem;
   }
 }
 *,
@@ -102,7 +102,6 @@ img {
 .header .nav__link {
   color: hsl(240deg, 13%, 60%);
   text-transform: capitalize;
-  font-weight: 500;
   position: relative;
   transition: 0.3s;
 }
@@ -135,6 +134,7 @@ img {
   color: hsl(252deg, 35%, 19%);
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
+  font-size: 1.05rem;
   cursor: pointer;
   border: none;
   outline: none;
@@ -162,7 +162,71 @@ img {
   z-index: -1;
   transition: 0.5s;
   bottom: 20%;
-  height: 10px;
+  height: 8px;
+}
+
+.home {
+  margin-top: 4rem;
+}
+.home .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block: 5.5rem;
+  padding-inline: 2rem;
+}
+.home__title {
+  margin-bottom: 1rem;
+}
+.home__desc {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.home__btn {
+  background-color: hsl(45deg, 93%, 58%);
+  color: hsl(252deg, 35%, 19%);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 0.75rem 0.75rem;
+  box-shadow: 0 0 10px rgba(247, 192, 29, 0.8);
+  padding-block: 0.75rem;
+}
+.home__btn:hover, .home__btn:active {
+  background-color: hsl(45deg, 93%, 54%);
+}
+.home__img {
+  position: relative;
+}
+.home__img > img {
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.home__img > img:hover {
+  filter: brightness(50%);
+}
+.home__play {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: hsl(8deg, 79%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+}
+.home__play:hover + img {
+  filter: brightness(50%);
 }
 
 /*# sourceMappingURL=main.css.map */
