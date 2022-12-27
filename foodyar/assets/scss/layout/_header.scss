@@ -36,7 +36,6 @@
         &__link {
             color: $text-color;
             text-transform: capitalize;
-            font-weight: map-get($map: $font-weights, $key: "medium");
             position: relative;
             transition: .3s;
 
