@@ -1,0 +1,25 @@
+/* ==================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+$main-font: 'Quicksand',
+sans-serif;
+
+// FONT SIZE
+:root {
+    --title-font-size: 2rem;
+    --medium-font-size: 1.5rem;
+    --subtitle-font-size: 1.35rem;
+    --normal-font-size: .938rem;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --title-font-size: 3.5rem;
+        --medium-font-size: 1.85rem;
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 1.15rem;
+    }
+}
+
+// FONT WEIGHT
+$font-weights: ("regular": 400, "bold": 700);
