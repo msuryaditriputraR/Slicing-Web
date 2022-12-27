@@ -225,6 +225,9 @@ img {
   cursor: pointer;
   z-index: 10;
 }
+.home__play:hover {
+  background-color: hsl(8deg, 79%, 88%);
+}
 .home__play:hover + img {
   filter: brightness(50%);
 }

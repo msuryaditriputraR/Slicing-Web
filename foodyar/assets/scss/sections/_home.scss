@@ -52,8 +52,12 @@
         cursor: pointer;
         z-index: map-get($map: $z-indexes, $key: "tooltip");
 
-        &:hover+img {
-            filter: brightness(50%);
+        &:hover {
+            background-color: $second-color-alt;
+
+            &+img {
+                filter: brightness(50%);
+            }
         }
     }
 }
