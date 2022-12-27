@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --title-font-size: 3.5rem;
+    --title-font-size: 3rem;
     --medium-font-size: 1.85rem;
     --h2-font-size: 1.5rem;
     --normal-font-size: 1.15rem;
@@ -144,6 +144,25 @@ img {
 }
 .header .nav__btn:hover, .header .nav__btn:active {
   background-color: hsl(8deg, 79%, 88%);
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: hsl(8deg, 79%, 92%);
+  border-radius: 2.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  z-index: -1;
+  transition: 0.5s;
+  bottom: 20%;
+  height: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
