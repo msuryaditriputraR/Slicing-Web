@@ -62,4 +62,9 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1148px;
+  margin-inline: auto;
+}
+
 /*# sourceMappingURL=main.css.map */
