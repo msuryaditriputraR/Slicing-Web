@@ -40,15 +40,9 @@
             transition: .3s;
 
             &::after {
-                content: "";
-                width: 0;
-                height: 4px;
-                background-color: $second-color;
-                position: absolute;
-                bottom: 3px;
-                z-index: -1;
-                left: 0;
-                transition: .5s;
+                @include underline {
+                    width: 0;
+                }
             }
 
             &:hover {

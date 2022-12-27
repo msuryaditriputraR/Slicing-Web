@@ -107,14 +107,16 @@ img {
 }
 .header .nav__link::after {
   content: "";
-  width: 0;
+  width: 100%;
   height: 4px;
   background-color: hsl(8deg, 79%, 92%);
+  border-radius: 2.5rem;
   position: absolute;
+  left: 0;
   bottom: 3px;
   z-index: -1;
-  left: 0;
   transition: 0.5s;
+  width: 0;
 }
 .header .nav__link:hover {
   color: hsl(252deg, 35%, 19%);
