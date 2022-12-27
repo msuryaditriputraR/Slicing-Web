@@ -3,6 +3,7 @@
     color: $title-color;
     font-family: $main-font;
     font-weight: map-get($map: $font-weights, $key: "semi-bold");
+    font-size: 1.05rem;
     cursor: pointer;
     border: none;
     outline: none;
