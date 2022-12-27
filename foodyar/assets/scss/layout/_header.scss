@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     z-index: map-get($map: $z-indexes, $key: "fixed");
+    background-color: $white-color;
 
     .nav {
         display: flex;

@@ -75,6 +75,7 @@ img {
   display: flex;
   align-items: center;
   z-index: 100;
+  background-color: hsl(0deg, 0%, 100%);
 }
 .header .nav {
   display: flex;
