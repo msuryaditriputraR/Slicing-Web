@@ -7,7 +7,7 @@
     position: absolute;
     left: 0;
     bottom: 3px;
-    z-index: -1;
+    z-index: map-get($map: $z-indexes, $key: "back");
     transition: .5s;
 
     @content;
