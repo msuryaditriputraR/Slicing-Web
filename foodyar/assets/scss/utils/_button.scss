@@ -1,0 +1,18 @@
+@mixin button($bgColor, $bgColorAlt) {
+    background-color: $bgColor;
+    color: $title-color;
+    font-family: $main-font;
+    font-weight: map-get($map: $font-weights, $key: "semi-bold");
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: .5rem 1.5rem;
+    border-radius: 1.5rem 1.5rem .75rem .75rem;
+
+    @content;
+
+    &:hover,
+    &:active {
+        background-color: $bgColorAlt;
+    }
+}
