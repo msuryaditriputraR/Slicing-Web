@@ -1,12 +1,12 @@
-header 
+header.header
     nav.nav.container 
-        a.nav__logo
+        a(href="#").nav__logo
             img(src="assets/images/logo.svg")
             .
                 Foodyar
         .nav__menu 
             ul.nav__list 
-                each link in ['Home', 'Beverages', 'Chef', 'Ingredient', 'Stories']
+                each link in ['home', 'beverages', 'chef', 'ingredient', 'stories']
                     li.nav__item 
-                        a.nav__link=link
+                        a(href="#" + link).nav__link=link
             button.nav__btn My Kitchen
