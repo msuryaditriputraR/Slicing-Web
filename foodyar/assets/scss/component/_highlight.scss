@@ -5,6 +5,6 @@
 .highlight::after {
     @include underline {
         bottom: 20%;
-        height: 10px;
+        height: 8px;
     }
 }
