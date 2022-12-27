@@ -1,0 +1,10 @@
+.highlight {
+    position: relative;
+}
+
+.highlight::after {
+    @include underline {
+        bottom: 20%;
+        height: 10px;
+    }
+}
