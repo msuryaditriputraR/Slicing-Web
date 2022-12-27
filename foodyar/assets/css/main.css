@@ -139,6 +139,7 @@ img {
   outline: none;
   padding: 0.5rem 1.5rem;
   border-radius: 1.5rem 1.5rem 0.75rem 0.75rem;
+  box-shadow: 0 0 10px rgba(249, 207, 200, 0.8);
 }
 .header .nav__btn:hover, .header .nav__btn:active {
   background-color: hsl(8deg, 79%, 88%);
