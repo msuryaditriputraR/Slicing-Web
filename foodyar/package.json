@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "sass": "npx sass --watch assets/scss:assets/css",
-    "pug": "npx pug-cli -w -P -o ./ assets/pug/index.pug"
+    "pug": "npx pug-cli -w -P -o ./ assets/pug/index.pug",
+    "start": "npx live-server ."
   },
   "keywords": [],
   "author": "msuryaditriputraR",
