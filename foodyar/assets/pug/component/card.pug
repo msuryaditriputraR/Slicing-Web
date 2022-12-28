@@ -1,0 +1,11 @@
+mixin card(name, creator, index)
+    .card 
+        .card__img 
+            img(src="assets/images/specials/special" + index + ".avif")
+        h4.card__name= name
+        p.card__creator= creator
+        .card__stars 
+            -var n = 0;
+            while n < 5
+                img.card__star(src="assets/images/star.svg" aria-hidden="true")
+                -n++
