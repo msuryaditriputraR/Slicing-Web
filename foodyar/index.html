@@ -1,47 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodyar</title>
-    
-    <!-- ==================== MAIN CSS =======================-->
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body>
-    <!-- ==================== HEADER =========================-->
-    <header class="header">
-      <nav class="nav container"> <a class="nav__logo" href="#"><img src="assets/images/logo.svg" alt="" aria-hidden="true">Foodyar</a>
-        <div class="nav__menu"> 
-          <ul class="nav__list"> 
-            <li class="nav__item"> <a class="nav__link" href="#home">home</a></li>
-            <li class="nav__item"> <a class="nav__link" href="#beverages">beverages</a></li>
-            <li class="nav__item"> <a class="nav__link" href="#chef">chef</a></li>
-            <li class="nav__item"> <a class="nav__link" href="#ingredient">ingredient</a></li>
-            <li class="nav__item"> <a class="nav__link" href="#stories">stories</a></li>
-          </ul>
-          <button class="nav__btn">My Kitchen</button>
-        </div>
-      </nav>
-    </header>
-    <!-- ==================== HOME ===========================-->
-    <section class="home" id="home">
-      <div class="container">
-        <div class="home__text"> 
-          <h1 class="home__title"> <span class="highlight">Eat</span> 
-            What You Cook <br> With Us, <span class="highlight">Together!</span>
-          </h1>
-          <p class="home__desc">When you eat something that cooked by <br> yourself, the happiness is priceless.</p>
-          <button class="home__btn">Decide a Menu</button>
-        </div>
-        <div class="home__img">
-          <div class="home__play"> <img src="assets/images/play.svg" alt="" aria-hidden="true"></div><img src="assets/images/banner1.avif" alt="video pembukaan">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodyar</title>
+
+  <!-- ==================== MAIN CSS =======================-->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!-- ==================== HEADER =========================-->
+  <header class="header">
+    <nav class="nav container"> <a class="nav__logo" href="#"><img src="assets/images/logo.svg" alt=""
+          aria-hidden="true">Foodyar</a>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"> <a class="nav__link" href="#home">home</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#beverages">beverages</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#chef">chef</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#ingredient">ingredient</a></li>
+          <li class="nav__item"> <a class="nav__link" href="#stories">stories</a></li>
+        </ul>
+        <button class="nav__btn">My Kitchen</button>
+      </div>
+    </nav>
+  </header>
+  <!-- ==================== HOME ===========================-->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="home__text">
+        <h1 class="home__title"> <span class="highlight">Eat</span>
+          What You Cook <br> With Us, <span class="highlight">Together!</span>
+        </h1>
+        <p class="home__desc">When you eat something that cooked by <br> yourself, the happiness is priceless.</p>
+        <button class="home__btn">Decide a Menu</button>
+      </div>
+      <div class="home__img">
+        <div class="home__play"> <img src="assets/images/play.svg" alt="" aria-hidden="true"></div><img
+          src="assets/images/banner1.avif" alt="video pembukaan">
+      </div>
+    </div>
+  </section>
+  <!-- ==================== FEATURES =======================-->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features__head"><span class="features__subtitle">Watch Now</span>
+        <h3 class="features__title">Special to Try</h3>
+        <div class="features__tabs" role="tablist" aria-label="features category">
+          <button class="features__tab" id="features-tab1" role="tab" aria-controls="content-1">Healthy Food</button>
+          <button class="features__tab" id="features-tab2" role="tab" aria-controls="content-2">Lunch</button>
+          <button class="features__tab" id="features-tab3" role="tab" aria-controls="content-3">Noodles</button>
+          <button class="features__tab" id="features-tab4" role="tab" aria-controls="content-4">Beef</button>
         </div>
       </div>
-    </section>
-    <!-- ==================== FEATURES =======================-->
-    <!-- ==================== SCRIPT JS ======================-->
-    <script src="assets/js/main.js"></script>
-  </body>
+      <div class="features__content">
+        <div class="features__card" id="content-1" aria-labelledby="Healthy Food" role="tabcontent">
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special1.avif"></div>
+            <h4 class="card__name">Salad Kiwi Sugga</h4>
+            <p class="card__creator">Amir Samantha</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special2.avif"></div>
+            <h4 class="card__name">Avocado Muscle</h4>
+            <p class="card__creator">John Lennonk</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special3.avif"></div>
+            <h4 class="card__name">Bayam Red Poppeye</h4>
+            <p class="card__creator">Toekang Sayoer</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special4.avif"></div>
+            <h4 class="card__name">Naga Fruity Joss</h4>
+            <p class="card__creator">Imelda Saranghae</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+        <div class="features__card" id="content-2" aria-labelledby="Lunch" role="tabcontent">
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special5.avif"></div>
+            <h4 class="card__name">Shrimp Soup</h4>
+            <p class="card__creator">Amir Samantha</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special6.avif"></div>
+            <h4 class="card__name">Egg Frosten</h4>
+            <p class="card__creator">John Mihawk</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special7.avif"></div>
+            <h4 class="card__name">Cake Swetty</h4>
+            <p class="card__creator">Chef Sanji</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special8.avif"></div>
+            <h4 class="card__name">Sushi Onion</h4>
+            <p class="card__creator">Imelda Saranghae</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+        <div class="features__card" id="content-3" aria-labelledby="Noodles" role="tabcontent">
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special9.avif"></div>
+            <h4 class="card__name">Noodles Vege</h4>
+            <p class="card__creator">Amir Samantha</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special10.avif"></div>
+            <h4 class="card__name">Combo Noodles</h4>
+            <p class="card__creator">Riky Yudistira</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special11.avif"></div>
+            <h4 class="card__name">Shrimp Noodles</h4>
+            <p class="card__creator">Seafood Fanatic</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+        <div class="features__card" id="content-4" aria-labelledby="Beef" role="tabcontent">
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special12.avif"></div>
+            <h4 class="card__name">Soup Beefers</h4>
+            <p class="card__creator">Imelda Saranghae</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special13.avif"></div>
+            <h4 class="card__name">Beef Pineapple</h4>
+            <p class="card__creator">Amir Samantha</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special14.avif"></div>
+            <h4 class="card__name">Cheese Burger</h4>
+            <p class="card__creator">Putri</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"> <img src="assets/images/specials/special15.avif"></div>
+            <h4 class="card__name">Beef Nudles</h4>
+            <p class="card__creator">Chef Sanji</p>
+            <div class="card__stars"> <img class="card__star" src="assets/images/star.svg" aria-hidden="true"><img
+                class="card__star" src="assets/images/star.svg" aria-hidden="true"><img class="card__star"
+                src="assets/images/star.svg" aria-hidden="true"><img class="card__star" src="assets/images/star.svg"
+                aria-hidden="true"><img class="card__star" src="assets/images/star.svg" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== SCRIPT JS ======================-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
