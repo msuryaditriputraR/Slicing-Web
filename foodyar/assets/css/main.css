@@ -85,6 +85,11 @@ img {
   max-width: 1148px;
   margin-inline: auto;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-inline: 2.5rem;
+  }
+}
 
 .header {
   position: fixed;
@@ -164,6 +169,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 80vw;
+  margin-inline: auto;
 }
 .footer__content {
   display: grid;
@@ -349,6 +355,12 @@ img {
 .features__cards:not(:first-child) {
   display: none;
 }
+@media screen and (max-width: 1024px) {
+  .features__cards {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+  }
+}
 .features__card {
   border-radius: 0 0 1.5rem 1.5rem;
   transition: 0.3s;
@@ -442,6 +454,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 80vw;
+  margin-inline: auto;
 }
 .contest__desc {
   line-height: 1.8;

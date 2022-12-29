@@ -58,6 +58,13 @@
         &:not(:first-child) {
             display: none;
         }
+
+        @include breakpoints-down("large") {
+            & {
+                grid-template-columns: repeat(3, max-content);
+                justify-content: center;
+            }
+        }
     }
 
     &__card {
