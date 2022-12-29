@@ -143,6 +143,36 @@ img {
   background-color: hsl(8deg, 79%, 88%);
 }
 
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 6.5rem;
+  padding-bottom: 3.5rem;
+}
+.footer__title {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.footer__link {
+  font-size: var(--small-font-size);
+  color: hsl(240deg, 13%, 60%);
+  transition: 0.3s;
+}
+.footer__link:hover {
+  color: hsl(252deg, 35%, 19%);
+  text-decoration: underline;
+}
+
 .logo {
   display: flex;
   align-items: center;
