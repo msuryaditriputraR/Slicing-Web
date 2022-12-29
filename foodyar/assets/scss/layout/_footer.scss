@@ -1,0 +1,36 @@
+.footer {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 6.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    &__title {
+        font-size: var(--normal-font-size);
+        margin-bottom: 1rem;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    &__link {
+        font-size: var(--small-font-size);
+        color: $text-color;
+        transition: .3s;
+
+        &:hover {
+            color: $title-color;
+            text-decoration: underline;
+        }
+    }
+}
