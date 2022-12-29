@@ -6,6 +6,15 @@
         align-items: center;
         width: 80vw;
         margin-inline: auto;
+
+        @include breakpoints-down('medium') {
+            & {
+                grid-template-columns: repeat(1, max-content);
+                justify-content: center;
+                text-align: center;
+                gap: 3.5rem;
+            }
+        }
     }
 
     &__content {
@@ -59,22 +68,18 @@
         }
     }
 
-    @include breakpoints-down('tablet') {
-        .logo {
-            align-self: flex-start;
-        }
-    }
-
-    @include breakpoints-down('medium') {
-        .container {
-            grid-template-columns: repeat(1, max-content);
-            justify-content: center;
-            text-align: center;
-            gap: 3.5rem;
+    .logo {
+        @include breakpoints-down('tablet') {
+            & {
+                align-self: flex-start;
+            }
         }
 
-        .logo {
-            margin-inline: auto;
+        @include breakpoints-down('medium') {
+
+            & {
+                margin-inline: auto;
+            }
         }
     }
 }
