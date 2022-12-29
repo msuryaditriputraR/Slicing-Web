@@ -1,0 +1,102 @@
+.features {
+    padding-block: 4.5rem 6.5rem;
+    text-align: center;
+
+    &__tabs {
+        margin-block: 2.5rem 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3.5rem;
+    }
+
+    &__tab {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: $white-color;
+        color: $title-color;
+        font-family: $main-font;
+        font-size: var(--normal-font-size);
+        position: relative;
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background-color: rgba($color: $first-color, $alpha: .65);
+            border-radius: .25rem;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            transition: .5s;
+        }
+
+        &.active,
+        &:hover {
+            color: $first-color;
+
+            @supports (-webkit-text-stroke: 1px black) {
+                & {
+                    -webkit-text-stroke: 1px rgba($color: $first-color, $alpha: .65);
+                }
+            }
+
+            &::after {
+                transform: translateX(-50%) scale(1);
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        gap: 2.5rem;
+
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+
+    &__card {
+        border-radius: 0 0 1.5rem 1.5rem;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 0 2px 10px rgba($color: $title-color, $alpha: .065);
+
+            .play {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        &:hover &-img>img {
+            filter: brightness(50%);
+        }
+
+        &-img {
+            max-width: 255px;
+            position: relative;
+
+            img {
+                transition: .3s;
+            }
+        }
+
+        &-content {
+            padding-block: 1.5rem;
+        }
+
+        &-creator {
+            margin-block: .5rem 1rem;
+            font-size: var(--small-font-size);
+        }
+
+        .play {
+            transform: translate(-50%, -50%) scale(0);
+            transition: .3s;
+        }
+    }
+}
