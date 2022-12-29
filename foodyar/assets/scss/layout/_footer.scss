@@ -33,4 +33,21 @@
             text-decoration: underline;
         }
     }
+
+    &__info {
+        text-align: center;
+        padding-block: 1.5rem;
+        border-top: 1px solid hsl(0, 0%, 90%);
+    }
+
+    &__copy {
+        font-size: var(--small-font-size);
+
+        &-link {
+            color: $first-color;
+            font-weight: map-get($map: $font-weights, $key: "bold");
+            text-decoration: 2px underline dashed;
+            text-underline-offset: .15rem;
+        }
+    }
 }

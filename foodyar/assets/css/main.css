@@ -172,6 +172,20 @@ img {
   color: hsl(252deg, 35%, 19%);
   text-decoration: underline;
 }
+.footer__info {
+  text-align: center;
+  padding-block: 1.5rem;
+  border-top: 1px solid hsl(0deg, 0%, 90%);
+}
+.footer__copy {
+  font-size: var(--small-font-size);
+}
+.footer__copy-link {
+  color: hsl(45deg, 93%, 58%);
+  font-weight: 700;
+  text-decoration: 2px underline dashed;
+  text-underline-offset: 0.15rem;
+}
 
 .logo {
   display: flex;
