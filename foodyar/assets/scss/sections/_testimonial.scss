@@ -1,0 +1,61 @@
+.testimonial {
+    padding-block: 4.5rem;
+    overflow: hidden;
+
+    &__content {
+        &-testi {
+            margin-inline: auto;
+            text-align: center;
+            color: $title-color;
+            font-size: var(--medium-font-size);
+            width: 35ch;
+            position: relative;
+            line-height: 1.6;
+
+            &::before {
+                content: "“";
+                font-size: 50rem;
+                position: absolute;
+                top: 0;
+                left: -30%;
+                line-height: .5;
+                color: hsl(0, 0%, 95%);
+                z-index: map-get($map: $z-indexes, $key: "back");
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1.5rem;
+            margin-block: 2.5rem 4.5rem;
+        }
+
+        &-job {
+            margin-top: .25rem;
+            font-size: var(--small-font-size);
+        }
+    }
+
+    &__statistic {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 50vw;
+        margin-inline: auto;
+
+        &-number {
+            font-size: var(--medium-font-size);
+            color: $title-color;
+            font-weight: map-get($map: $font-weights, $key: "bold");
+            margin-bottom: .25rem;
+        }
+
+        &-text {
+            font-size: var(--small-font-size);
+        }
+    }
+}
