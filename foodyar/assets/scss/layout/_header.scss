@@ -14,14 +14,6 @@
         align-items: center;
         width: 100%;
 
-        &__logo {
-            display: flex;
-            align-items: center;
-            column-gap: 1rem;
-            color: $title-color;
-            font-weight: map-get($map: $font-weights, $key: "semi-bold");
-        }
-
         &__menu {
             display: flex;
             column-gap: 3rem;

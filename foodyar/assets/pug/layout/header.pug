@@ -1,9 +1,8 @@
+include ../component/logo.pug
+
 header.header
     nav.nav.container 
-        a(href="#").nav__logo
-            img(src="assets/images/logo.svg" alt="" aria-hidden="true")
-            .
-                Foodyar
+        +logo
         .nav__menu 
             ul.nav__list 
                 each link in ['home', 'beverages', 'chef', 'ingredient', 'stories']

@@ -87,13 +87,6 @@ img {
   align-items: center;
   width: 100%;
 }
-.header .nav__logo {
-  display: flex;
-  align-items: center;
-  column-gap: 1rem;
-  color: hsl(252deg, 35%, 19%);
-  font-weight: 600;
-}
 .header .nav__menu {
   display: flex;
   column-gap: 3rem;
@@ -148,6 +141,14 @@ img {
 }
 .header .nav__btn:hover, .header .nav__btn:active {
   background-color: hsl(8deg, 79%, 88%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  color: hsl(252deg, 35%, 19%);
+  font-weight: 600;
 }
 
 .highlight {

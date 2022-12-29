@@ -1,0 +1,7 @@
+ .logo {
+     display: flex;
+     align-items: center;
+     column-gap: 1rem;
+     color: $title-color;
+     font-weight: map-get($map: $font-weights, $key: "semi-bold");
+ }
