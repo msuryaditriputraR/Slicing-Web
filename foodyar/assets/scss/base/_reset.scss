@@ -47,3 +47,19 @@ a {
 img {
     max-width: 100%;
 }
+
+/* ==================== SCROLL BAR ===================== */
+::-webkit-scrollbar {
+    width: .8rem;
+    border-radius: .5rem;
+    background-color: $scroll-color;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: $scroll-thumb-color;
+
+    &:hover {
+        background-color: $scroll-thumb-hover-color;
+    }
+}
