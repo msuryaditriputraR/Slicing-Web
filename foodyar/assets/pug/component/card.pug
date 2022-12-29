@@ -1,11 +1,14 @@
 mixin card(name, creator, index)
-    .card 
-        .card__img 
+    .features__card 
+        .features__card-img 
+            .play 
+                img(src="assets/images/play.svg" alt="" aria-hidden="true")
             img(src="assets/images/specials/special" + index + ".avif")
-        h4.card__name= name
-        p.card__creator= creator
-        .card__stars 
-            -var n = 0;
-            while n < 5
-                img.card__star(src="assets/images/star.svg" aria-hidden="true")
-                -n++
+        .features__card-content
+            h4.features__card-name= name
+            p.features__card-creator= creator
+            .features__card-stars 
+                -var n = 0;
+                while n < 5
+                    img.features__card-star(src="assets/images/star.svg" aria-hidden="true")
+                    -n++
