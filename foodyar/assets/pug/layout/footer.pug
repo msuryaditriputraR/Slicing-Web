@@ -1,1 +1,16 @@
 include ../component/logo.pug
+
+footer.footer 
+    .container
+        +logo
+        .footer__content 
+            each lists in footerLists 
+                div 
+                    h4.footer__title= lists.title
+                    ul.footer__list
+                        each list in lists.list 
+                            li.footer__item
+                                a.footer__link= list
+
+
+
