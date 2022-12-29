@@ -65,6 +65,13 @@
                 justify-content: center;
             }
         }
+
+        @include breakpoints-down('tablet') {
+            & {
+                grid-template-columns: repeat(2, max-content);
+                column-gap: 4.5rem;
+            }
+        }
     }
 
     &__card {
@@ -89,6 +96,12 @@
 
             img {
                 transition: .3s;
+            }
+
+            @include breakpoints-down('tablet') {
+                & {
+                    max-width: 200px;
+                }
             }
         }
 

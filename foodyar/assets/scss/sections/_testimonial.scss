@@ -47,6 +47,12 @@
         width: 50vw;
         margin-inline: auto;
 
+        @include breakpoints-down('tablet') {
+            & {
+                width: 80vw;
+            }
+        }
+
         &-number {
             font-size: var(--medium-font-size);
             color: $title-color;

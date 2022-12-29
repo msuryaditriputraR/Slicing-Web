@@ -13,6 +13,13 @@
         grid-template-columns: repeat(3, max-content);
         column-gap: 6.5rem;
         padding-bottom: 3.5rem;
+
+        @include breakpoints-down('tablet') {
+            & {
+                grid-template-columns: repeat(2, max-content);
+                gap: 3.5rem;
+            }
+        }
     }
 
     &__title {
@@ -49,6 +56,12 @@
             font-weight: map-get($map: $font-weights, $key: "bold");
             text-decoration: 2px underline dashed;
             text-underline-offset: .15rem;
+        }
+    }
+
+    @include breakpoints-down('tablet') {
+        .logo {
+            align-self: flex-start;
         }
     }
 }

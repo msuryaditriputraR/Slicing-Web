@@ -23,4 +23,15 @@
             display: inline-block;
         }
     }
+
+    @include breakpoints-down('tablet') {
+        &__img {
+            display: none;
+        }
+
+        .container {
+            width: max-content;
+            text-align: center;
+        }
+    }
 }

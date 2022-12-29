@@ -7,6 +7,16 @@
         grid-template-columns: repeat(2, 1fr);
         padding-block: 8rem 11rem;
         padding-inline: 2rem;
+
+        @include breakpoints-down('tablet') {
+            & {
+                grid-template-columns: repeat(1, 70vw);
+                justify-content: center;
+                text-align: center;
+                row-gap: 4.5rem;
+                padding-block: 5rem 4.5rem;
+            }
+        }
     }
 
     &__title {
