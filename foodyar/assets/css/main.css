@@ -218,6 +218,17 @@ img {
     align-self: flex-start;
   }
 }
+@media screen and (max-width: 568px) {
+  .footer .container {
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+    text-align: center;
+    gap: 3.5rem;
+  }
+  .footer .logo {
+    margin-inline: auto;
+  }
+}
 
 .logo {
   display: flex;
@@ -387,6 +398,11 @@ img {
     column-gap: 4.5rem;
   }
 }
+@media screen and (max-width: 568px) {
+  .features__cards {
+    gap: 2rem;
+  }
+}
 .features__card {
   border-radius: 0 0 1.5rem 1.5rem;
   transition: 0.3s;
@@ -470,6 +486,13 @@ img {
 @media screen and (max-width: 768px) {
   .testimonial__statistic {
     width: 80vw;
+  }
+}
+@media screen and (max-width: 568px) {
+  .testimonial__statistic {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 2rem;
   }
 }
 .testimonial__statistic-number {

@@ -53,6 +53,14 @@
             }
         }
 
+        @include breakpoints-down('medium') {
+            & {
+                grid-template-columns: repeat(2, max-content);
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
         &-number {
             font-size: var(--medium-font-size);
             color: $title-color;

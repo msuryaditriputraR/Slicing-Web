@@ -72,6 +72,12 @@
                 column-gap: 4.5rem;
             }
         }
+
+        @include breakpoints-down('medium') {
+            & {
+                gap: 2rem;
+            }
+        }
     }
 
     &__card {

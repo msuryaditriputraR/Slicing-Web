@@ -64,4 +64,17 @@
             align-self: flex-start;
         }
     }
+
+    @include breakpoints-down('medium') {
+        .container {
+            grid-template-columns: repeat(1, max-content);
+            justify-content: center;
+            text-align: center;
+            gap: 3.5rem;
+        }
+
+        .logo {
+            margin-inline: auto;
+        }
+    }
 }
