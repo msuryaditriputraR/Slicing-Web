@@ -1,0 +1,14 @@
+section#testimonial.testimonial
+    .container 
+        .testimonial__content 
+            blockquote.testimonial__content-testi Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka lebih suka makan malam di rumah demi menyantap masakan yang saya buat sendiri
+            .testimonial__content-info 
+                img.testimonial__content-img(src="assets/images/testi.avif" aria-labelledby="testimonial-content-name")
+                div 
+                    h4#testimonial-content-name Camella Sarrah
+                    p.testimonial__content-job Vege Master
+        .testimonial__statistic
+            each stats in statistic
+                div 
+                    p.testimonial__statistic-number= stats.number
+                    p.testimonial__statistic-text= stats.text
