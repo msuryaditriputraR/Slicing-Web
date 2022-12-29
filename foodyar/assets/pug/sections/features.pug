@@ -8,10 +8,13 @@ section#features.features
             h3.features__title Special to Try
             .features__tabs(role="tablist" aria-label="features category")
                 each text, i in tabs
-                    button.features__tab(id="features-tab" + (i+1) role="tab" aria-controls="content-" + (i+1) )=text
+                    if i == 0
+                        button.features__tab.active(role="tab" aria-controls="content-" + (i+1))=text
+                    else
+                        button.features__tab(role="tab" aria-controls="content-" + (i+1))=text
         .features__content 
             each tab,i in tabs
-                .features__card(id="content-" + (i+1) aria-labelledby= tab role="tabcontent")
+                .features__cards(id="content-" + (i+1) aria-labelledby= tab role="tabcontent")
                     each content, ii in contents
                         if content.tab == tab
                             +card(content.name, content.creator,(ii+1))
