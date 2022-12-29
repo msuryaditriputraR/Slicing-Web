@@ -22,6 +22,17 @@
             border-radius: 2.5rem;
             display: inline-block;
         }
+
+        @include breakpoints-down('small') {
+            & {
+                flex-direction: column;
+                row-gap: 1rem;
+
+                a:first-child {
+                    order: 2;
+                }
+            }
+        }
     }
 
     @include breakpoints-down('tablet') {

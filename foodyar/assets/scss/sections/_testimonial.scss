@@ -22,6 +22,12 @@
                 color: hsl(0, 0%, 95%);
                 z-index: map-get($map: $z-indexes, $key: "back");
             }
+
+            @include breakpoints-down('small') {
+                & {
+                    width: 25ch;
+                }
+            }
         }
 
         &-info {

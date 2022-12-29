@@ -8,6 +8,15 @@
         justify-content: center;
         align-items: center;
         column-gap: 3.5rem;
+
+        @include breakpoints-down('small') {
+            & {
+                display: grid;
+                grid-template-columns: repeat(2, max-content);
+                gap: 1.5rem 2.5rem;
+                margin-bottom: 3.5rem;
+            }
+        }
     }
 
     &__tab {
@@ -76,6 +85,12 @@
         @include breakpoints-down('medium') {
             & {
                 gap: 2rem;
+            }
+        }
+
+        @include breakpoints-down('small') {
+            & {
+                grid-template-columns: repeat(1, max-content);
             }
         }
     }

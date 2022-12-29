@@ -17,6 +17,13 @@
                 padding-block: 5rem 4.5rem;
             }
         }
+
+        @include breakpoints-down('small') {
+            & {
+                padding-inline: 0;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     }
 
     &__title {
