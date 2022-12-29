@@ -5,7 +5,7 @@
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2, 1fr);
-        padding-block: 5.5rem;
+        padding-block: 8rem 11rem;
         padding-inline: 2rem;
     }
 
@@ -33,29 +33,6 @@
             transition: .5s;
 
             &:hover {
-                filter: brightness(50%);
-            }
-        }
-    }
-
-    &__play {
-        @include box(55px, 55px, 50%);
-        background-color: $second-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-        z-index: map-get($map: $z-indexes, $key: "tooltip");
-
-        &:hover {
-            background-color: $second-color-alt;
-
-            &+img {
                 filter: brightness(50%);
             }
         }
