@@ -23,5 +23,14 @@ sans-serif;
     }
 }
 
+@media screen and (max-width: 375px) {
+    :root {
+        --title-font-size: 1.675rem;
+        --subtitle-font-size: 1.35rem;
+        --medium-font-size: 1.15rem;
+        --normal-font-size: .898rem;
+    }
+}
+
 // FONT WEIGHT
 $font-weights: ("regular": 400, "medium": 500, "semi-bold": 600, "bold": 700);
