@@ -150,14 +150,14 @@ img {
     z-index: 100;
     background-color: hsl(0deg, 0%, 100%);
     width: 60vw;
-    border-radius: 0 0 1.5rem 1.5rem;
+    border-radius: 1.5rem;
     padding-block: 0.5rem 1.5rem;
     font-size: 1.065rem;
-    box-shadow: 0 2px 8px rgba(38, 31, 65, 0.085);
+    box-shadow: 0 0 10px rgba(38, 31, 65, 0.085);
     transition: 0.3s;
   }
   .header .nav__list.active-menu {
-    top: 4rem;
+    top: 5.5rem;
   }
 }
 @media screen and (max-width: 375px) {
