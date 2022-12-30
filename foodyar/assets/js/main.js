@@ -33,6 +33,17 @@ function handleTab(tabClass, contentClass) {
 
 handleTab(".features__tab", ".features__cards");
 
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = () => {
+    const header = document.getElementById("header");
+
+    this.scrollY >= 50
+        ? header.classList.add("scroll-header")
+        : header.classList.remove("scroll-header");
+};
+
+window.addEventListener("scroll", scrollHeader);
+
 /* ==================== TOGGLE MENU ===================== */
 const navToggle = document.getElementById("nav-toggle");
 const navList = document.getElementById("nav-list");

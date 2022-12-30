@@ -8,6 +8,11 @@
     z-index: map-get($map: $z-indexes, $key: "fixed");
     background-color: $white-color;
 
+    &.scroll-header {
+        box-shadow: 0 2px 8px rgba($color: $title-color, $alpha: .085);
+        transition: .3s;
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;

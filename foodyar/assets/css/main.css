@@ -114,6 +114,10 @@ img {
   z-index: 100;
   background-color: hsl(0deg, 0%, 100%);
 }
+.header.scroll-header {
+  box-shadow: 0 2px 8px rgba(38, 31, 65, 0.085);
+  transition: 0.3s;
+}
 .header .nav {
   display: flex;
   justify-content: space-between;
