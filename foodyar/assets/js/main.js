@@ -33,6 +33,15 @@ function handleTab(tabClass, contentClass) {
 
 handleTab(".features__tab", ".features__cards");
 
+/* ==================== TOGGLE MENU ===================== */
+const navToggle = document.getElementById("nav-toggle");
+const navList = document.getElementById("nav-list");
+
+navToggle.addEventListener("click", () => {
+    navToggle.classList.toggle("active-toggle");
+    navList.classList.toggle("active-menu");
+});
+
 /* ==================== UTILS ===================== */
 function removeAllState(elem, state) {
     elem.forEach((el) => el.classList.remove(state));

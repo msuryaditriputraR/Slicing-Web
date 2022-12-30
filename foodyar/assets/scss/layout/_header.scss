@@ -34,7 +34,7 @@
             @include breakpoints-down("tablet") {
                 & {
                     position: fixed;
-                    top: $header-height;
+                    top: -100%;
                     left: 50%;
                     transform: translateX(-50%);
                     flex-direction: column;
@@ -46,6 +46,11 @@
                     padding-block: .5rem 1.5rem;
                     font-size: 1.065rem;
                     box-shadow: 0 2px 8px rgba($color: $title-color, $alpha: .085);
+                    transition: .3s;
+                }
+
+                &.active-menu {
+                    top: $header-height;
                 }
             }
 
@@ -104,7 +109,8 @@
                     cursor: pointer;
                     transition: .3s;
 
-                    &:hover {
+                    &:hover,
+                    &.active-toggle {
                         color: $first-color-alt;
                     }
                 }
