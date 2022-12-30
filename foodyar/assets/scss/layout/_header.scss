@@ -17,12 +17,43 @@
         &__menu {
             display: flex;
             column-gap: 3rem;
+            align-items: center;
+
+            @include breakpoints-down("tablet") {
+                & {
+                    column-gap: 1rem;
+                }
+            }
         }
 
         &__list {
             display: flex;
             column-gap: 1.5rem;
             align-items: center;
+
+            @include breakpoints-down("tablet") {
+                & {
+                    position: fixed;
+                    top: $header-height;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    flex-direction: column;
+                    row-gap: 1.5rem;
+                    z-index: map-get($map: $z-indexes, $key: "fixed");
+                    background-color: $white-color;
+                    width: 60vw;
+                    border-radius: 0 0 1.5rem 1.5rem;
+                    padding-block: .5rem 1.5rem;
+                    font-size: 1.065rem;
+                    box-shadow: 0 2px 8px rgba($color: $title-color, $alpha: .085);
+                }
+            }
+
+            @include breakpoints-down("small") {
+                & {
+                    width: 80%;
+                }
+            }
         }
 
         &__link {
@@ -53,7 +84,33 @@
         }
 
         &__btn {
-            @include button($second-color, $second-color-alt)
+            @include button($second-color, $second-color-alt);
+
+            @include breakpoints-down("small") {
+                & {
+                    display: none;
+                }
+            }
         }
+
+        &__toggle {
+            display: none;
+
+            @include breakpoints-down("tablet") {
+                & {
+                    display: flex;
+                    font-size: 1.25rem;
+                    color: $title-color;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $first-color-alt;
+                    }
+                }
+            }
+        }
+
+
     }
 }
