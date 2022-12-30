@@ -78,7 +78,8 @@
                 }
             }
 
-            &:hover {
+            &:hover,
+            &.active-link {
                 color: $title-color;
 
                 @supports (-webkit-text-stroke: 1px black) {

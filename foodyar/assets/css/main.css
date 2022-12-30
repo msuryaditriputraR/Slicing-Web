@@ -184,15 +184,15 @@ img {
   transition: 0.5s;
   width: 0;
 }
-.header .nav__link:hover {
+.header .nav__link:hover, .header .nav__link.active-link {
   color: hsl(252deg, 35%, 19%);
 }
 @supports (-webkit-text-stroke: 1px black) {
-  .header .nav__link:hover {
+  .header .nav__link:hover, .header .nav__link.active-link {
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
   }
 }
-.header .nav__link:hover::after {
+.header .nav__link:hover::after, .header .nav__link.active-link::after {
   width: 100%;
 }
 .header .nav__btn {

@@ -5,7 +5,7 @@ header.header#header
         +logo
         .nav__menu 
             ul.nav__list#nav-list 
-                each link in ['home', 'beverages', 'chef', 'ingredient', 'stories']
+                each link in navLinks
                     li.nav__item 
                         a(href="#" + link).nav__link=link
             .nav__toggle#nav-toggle
