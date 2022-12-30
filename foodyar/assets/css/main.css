@@ -356,6 +356,29 @@ img {
   filter: brightness(50%);
 }
 
+.scrollup {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.25rem;
+  position: fixed;
+  z-index: 100;
+  right: 2.5rem;
+  bottom: -100%;
+  background-color: hsl(45deg, 93%, 58%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.scrollup:hover {
+  transform: translateY(-10px);
+}
+.scrollup.active-scrollup {
+  bottom: 3.5rem;
+}
+
 .home {
   margin-top: 4rem;
 }

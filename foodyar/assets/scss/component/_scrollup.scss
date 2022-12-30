@@ -1,0 +1,22 @@
+.scrollup {
+    @include box(35px, 35px, .25rem);
+    position: fixed;
+    z-index: map-get($map: $z-indexes, $key: "fixed");
+    right: 2.5rem;
+    bottom: -100%;
+    background-color: $first-color;
+    color: $white-color;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    &.active-scrollup {
+        bottom: 3.5rem;
+    }
+}

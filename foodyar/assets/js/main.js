@@ -77,6 +77,17 @@ function scrollActive() {
 
 window.addEventListener("scroll", scrollActive);
 
+/*=============== SHOW SCROLL UP ===============*/
+function showScrollup(idScrollUp) {
+    const scrollUp = document.getElementById(idScrollUp);
+
+    scrollUp.classList[this.scrollY >= 130 ? "add" : "remove"](
+        "active-scrollup"
+    );
+}
+
+window.addEventListener("scroll", () => showScrollup("scroll-up"));
+
 /* ==================== UTILS ===================== */
 function removeAllState(elem, state) {
     elem.forEach((el) => el.classList.remove(state));
