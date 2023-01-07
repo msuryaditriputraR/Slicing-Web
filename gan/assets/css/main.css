@@ -166,6 +166,14 @@ main {
   font-size: var(--small-font-size);
   margin-top: 1rem;
 }
+.footer__copy {
+  font-size: 0.785rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.15rem;
+  padding-bottom: 0.5rem;
+}
 
 /* ==================== HOME 1 ===================== */
 .home1 {
