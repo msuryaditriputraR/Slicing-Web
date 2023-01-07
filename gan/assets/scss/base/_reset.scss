@@ -16,6 +16,7 @@ body {
     font-family: $main-font;
     font-weight: map-get($font-weights, "regular");
     font-size: var(--normal-font-size);
+    color: $text-color;
 }
 
 li {
