@@ -20,3 +20,9 @@ const swiper = new Swiper(".home3__teams", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+/* ==================== YEAR ===================== */
+const year = document.getElementById("year");
+const date = new Date();
+
+year.innerHTML = date.getFullYear();
