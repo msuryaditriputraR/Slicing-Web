@@ -1,0 +1,21 @@
+.home1 {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: var(--title-font-size);
+        margin-bottom: .5rem;
+    }
+
+    &__desc {
+        line-height: 1.5;
+        margin-bottom: 1.65rem;
+    }
+
+    &__image {
+        max-width: 580px;
+    }
+}

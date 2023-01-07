@@ -19,11 +19,11 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --title-font-size: 2.85rem;
+    --title-font-size: 2.5rem;
     --subtitle-font-size: 1.785rem;
     --medium-font-size: 1.585rem;
     --normal-font-size: 1.185rem;
-    --small-font-size: 1rem;
+    --small-font-size: 1.025rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -65,6 +65,15 @@ img {
   max-width: 100%;
 }
 
+.btn {
+  background-color: hsl(141deg, 38%, 40%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.5rem 1rem;
+  border-radius: 2.5rem;
+  font-size: var(--small-font-size);
+  box-shadow: 0 4px 10px rgba(63, 141, 90, 0.35);
+}
+
 .container {
   max-width: 1148px;
   margin-inline: auto;
@@ -94,6 +103,27 @@ img {
 }
 .header .nav__link.active, .header .nav__link:hover {
   color: hsl(141deg, 38%, 40%);
+}
+
+main {
+  margin-top: 8rem;
+}
+
+.home1 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home1__title {
+  font-size: var(--title-font-size);
+  margin-bottom: 0.5rem;
+}
+.home1__desc {
+  line-height: 1.5;
+  margin-bottom: 1.65rem;
+}
+.home1__image {
+  max-width: 580px;
 }
 
 /*# sourceMappingURL=main.css.map */

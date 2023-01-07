@@ -1,6 +1,18 @@
 extends partials/layout.pug
 
+include component/button.pug
+
 block title 
     - var title = "PT GHALIB AGRO NABATI"
 
 block content
+    //  ========================= HOME 1 ========================== 
+    section.home1
+        .container
+            .home1__info
+                h1.home1__title PT GHALIB AGRO NABATI
+                p.home1__desc Distributor Utama Minyak Goreng <br> Kemasan Premium ALIF !
+                +button("tentang.html", "Tentang Kami")
+
+            .home1__image 
+                img(src="./assets/img/banner1.png" alt="" aria-hidden="true")
