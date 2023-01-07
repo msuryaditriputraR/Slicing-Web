@@ -1,0 +1,10 @@
+footer.footer 
+    .container 
+        .footer__top
+            .footer__logo 
+                img(src="./assets/img/logo.png" alt="")
+            .footer__socials 
+                each ms in medsos 
+                    .footer__social 
+                        a(href=ms.link, target="_blank" rel="noopener noreferrer") 
+                            i(class="bx bxl-" + ms.icon aria-label=ms.icon)

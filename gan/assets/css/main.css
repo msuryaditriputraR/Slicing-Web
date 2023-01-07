@@ -110,6 +110,41 @@ main {
   margin-top: 8rem;
 }
 
+.footer {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+.footer .footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(0deg, 0%, 60%);
+}
+.footer__logo {
+  max-width: 100px;
+}
+.footer__socials {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.footer__social {
+  background-color: hsl(141deg, 38%, 40%);
+  font-size: 1.25rem;
+  width: 30px;
+  height: 30px;
+}
+.footer__social i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(141deg, 38%, 40%);
+  border-radius: 50%;
+}
+
 /* ==================== HOME 1 ===================== */
 .home1 {
   padding-bottom: 6rem;
