@@ -29,3 +29,23 @@ block content
                     | Menjadikan Kami menjadi usaha yang <br> memiliki kepercayaan di Mata masyarakat
                 +button("armada.html", "Armada & Gudang")
 
+    //  ========================= HOME 2 ========================== 
+    section.home3
+        p.home3__title orang-orang hebat yang bekerja dalam perusahaan kami!
+        .container 
+            .swiper.home3__teams
+                .swiper-wrapper
+                    - var i = 1
+                    - var n = 15
+                    while i <= n
+                        .swiper-slide.home3__card
+                            img(src="./assets/img/team/team" + i++ + ".png" alt="")
+                .swiper-button-next
+                    i.bx.bxs-right-arrow
+                .swiper-button-prev
+                    i.bx.bxs-left-arrow
+            +button("kontak.html", "Hubungi Kami")
+
+
+
+

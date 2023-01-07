@@ -49,3 +49,33 @@
         margin-bottom: 2.25rem;
     }
 }
+
+/* ==================== HOME 3 ===================== */
+.home3 {
+    text-align: center;
+    padding-block: 4.5rem 5.5rem;
+
+    &__teams {
+        margin-block: 2.5rem 4.5rem;
+        padding-block: .5rem;
+    }
+
+    &__card {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(4px 4px 10px rgba($text-color, .9));
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+
+        color: $main-color;
+        font-size: 3rem;
+
+        &::after {
+            display: none;
+        }
+    }
+}

@@ -153,4 +153,30 @@ main {
   margin-bottom: 2.25rem;
 }
 
+/* ==================== HOME 3 ===================== */
+.home3 {
+  text-align: center;
+  padding-block: 4.5rem 5.5rem;
+}
+.home3__teams {
+  margin-block: 2.5rem 4.5rem;
+  padding-block: 0.5rem;
+}
+.home3__card {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(4px 4px 10px rgba(13, 13, 13, 0.9));
+}
+.home3 .swiper-button-next,
+.home3 .swiper-button-prev {
+  color: hsl(141deg, 38%, 40%);
+  font-size: 3rem;
+}
+.home3 .swiper-button-next::after,
+.home3 .swiper-button-prev::after {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
