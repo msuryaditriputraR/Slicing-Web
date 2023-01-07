@@ -1,0 +1,11 @@
+block data
+
+header.header
+    nav.container.nav 
+        a.nav__logo(href="./index.html") 
+            img(src="./assets/img/logo.png" alt="PT GHALIB AGRO NABATI")
+        .nav__menu#nav-menu 
+            ul.nav__list
+                each link in links 
+                    li.nav__item 
+                        a.nav__link(href="./pages/" + link.page)=link.text
