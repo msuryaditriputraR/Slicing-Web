@@ -1,0 +1,8 @@
+.btn {
+    background-color: $main-color;
+    color: $white-color;
+    padding: .5rem 1rem;
+    border-radius: 2.5rem;
+    font-size: var(--small-font-size);
+    box-shadow: 0 4px 10px rgba($color: $main-color, $alpha: .35);
+}
