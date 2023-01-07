@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: map-get($map: $z-indexes, $key: "fixed");
+    padding-block: 1.5rem;
+    top: 0;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            max-width: 100px;
+        }
+
+        &__list {
+            display: flex;
+            column-gap: 2.5rem;
+        }
+
+        &__link {
+            color: $text-color;
+            transition: .3s;
+
+            &.active,
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

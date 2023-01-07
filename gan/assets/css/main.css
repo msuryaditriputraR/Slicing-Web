@@ -50,6 +50,7 @@ body {
   font-family: "Product-Sans", sans-serif;
   font-weight: 400;
   font-size: var(--normal-font-size);
+  color: hsl(0deg, 0%, 5%);
 }
 
 li {
@@ -62,6 +63,37 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.container {
+  max-width: 1148px;
+  margin-inline: auto;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  padding-block: 1.5rem;
+  top: 0;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav__logo {
+  max-width: 100px;
+}
+.header .nav__list {
+  display: flex;
+  column-gap: 2.5rem;
+}
+.header .nav__link {
+  color: hsl(0deg, 0%, 5%);
+  transition: 0.3s;
+}
+.header .nav__link.active, .header .nav__link:hover {
+  color: hsl(141deg, 38%, 40%);
 }
 
 /*# sourceMappingURL=main.css.map */
