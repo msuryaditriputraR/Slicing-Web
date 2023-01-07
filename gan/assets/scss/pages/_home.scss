@@ -1,4 +1,7 @@
+/* ==================== HOME 1 ===================== */
 .home1 {
+    padding-bottom: 6rem;
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -17,5 +20,32 @@
 
     &__image {
         max-width: 580px;
+    }
+}
+
+/* ==================== HOME 2 ===================== */
+.home2 {
+    text-align: center;
+    padding-block: 4.5rem 5.5rem;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .highlight {
+        color: $main-color;
+        font-weight: map-get($map: $font-weights, $key: "bold");
+
+    }
+
+    &__image {
+        max-width: 430px;
+    }
+
+    &__desc {
+        line-height: 1.65;
+        margin-bottom: 2.25rem;
     }
 }

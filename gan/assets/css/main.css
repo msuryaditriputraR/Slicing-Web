@@ -22,8 +22,8 @@
     --title-font-size: 2.5rem;
     --subtitle-font-size: 1.785rem;
     --medium-font-size: 1.585rem;
-    --normal-font-size: 1.185rem;
-    --small-font-size: 1.025rem;
+    --normal-font-size: 1.315rem;
+    --small-font-size: 1.015rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -68,7 +68,7 @@ img {
 .btn {
   background-color: hsl(141deg, 38%, 40%);
   color: hsl(0deg, 0%, 100%);
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 2.5rem;
   font-size: var(--small-font-size);
   box-shadow: 0 4px 10px rgba(63, 141, 90, 0.35);
@@ -100,6 +100,7 @@ img {
 .header .nav__link {
   color: hsl(0deg, 0%, 5%);
   transition: 0.3s;
+  font-size: 1.215rem;
 }
 .header .nav__link.active, .header .nav__link:hover {
   color: hsl(141deg, 38%, 40%);
@@ -109,6 +110,10 @@ main {
   margin-top: 8rem;
 }
 
+/* ==================== HOME 1 ===================== */
+.home1 {
+  padding-bottom: 6rem;
+}
 .home1 .container {
   display: flex;
   justify-content: space-between;
@@ -120,10 +125,32 @@ main {
 }
 .home1__desc {
   line-height: 1.5;
-  margin-bottom: 1.65rem;
+  margin-bottom: 1.5rem;
 }
 .home1__image {
   max-width: 580px;
+}
+
+/* ==================== HOME 2 ===================== */
+.home2 {
+  text-align: center;
+  padding-block: 4.5rem 5.5rem;
+}
+.home2 .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home2 .highlight {
+  color: hsl(141deg, 38%, 40%);
+  font-weight: 700;
+}
+.home2__image {
+  max-width: 430px;
+}
+.home2__desc {
+  line-height: 1.65;
+  margin-bottom: 2.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */
