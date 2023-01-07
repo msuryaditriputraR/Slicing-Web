@@ -112,7 +112,6 @@ main {
 
 .footer {
   margin-top: 4.5rem;
-  margin-bottom: 4.5rem;
 }
 .footer .footer__top {
   display: flex;
@@ -143,6 +142,29 @@ main {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(141deg, 38%, 40%);
   border-radius: 50%;
+}
+.footer__maps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-block: 3.5rem;
+}
+.footer__image {
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+.footer__image-link img {
+  transition: 0.3s;
+}
+.footer__image:hover .footer__image-link img {
+  transform: scale(1.2);
+}
+.footer__location {
+  font-size: var(--small-font-size);
+  margin-top: 1rem;
 }
 
 /* ==================== HOME 1 ===================== */

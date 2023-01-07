@@ -8,3 +8,10 @@ footer.footer
                     .footer__social 
                         a(href=ms.link, target="_blank" rel="noopener noreferrer") 
                             i(class="bx bxl-" + ms.icon aria-label=ms.icon)
+        .footer__maps 
+            each map, i in maps 
+                .footer__map 
+                    .footer__image 
+                        a(href=map.link, target="_blank" rel="noopener noreferrer" aria-describedby="map-location" + (i+1)).footer__image-link 
+                            img(src="./assets/img/maps/map" + (i+1) + ".png" alt="" aria-hidden="true")
+                    p.footer__location(id="map-location" + (i+1)) !{map.loc}
