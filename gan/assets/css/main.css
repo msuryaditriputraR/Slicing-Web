@@ -65,6 +65,21 @@ img {
   max-width: 100%;
 }
 
+/* ==================== SCROLL BAR ===================== */
+::-webkit-scrollbar {
+  width: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: hsl(141deg, 38%, 90%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(141deg, 38%, 35%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(141deg, 38%, 40%);
+}
+
 .btn {
   background-color: hsl(141deg, 38%, 40%);
   color: hsl(0deg, 0%, 100%);
