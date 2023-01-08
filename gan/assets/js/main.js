@@ -45,3 +45,14 @@ function scrollHeader() {
 }
 
 window.addEventListener("scroll", scrollHeader);
+
+/*=============== SHOW SCROLL UP ===============*/
+function showScrollup(idScrollUp) {
+    const scrollUp = document.getElementById(idScrollUp);
+
+    scrollUp.classList[this.scrollY >= 130 ? "add" : "remove"](
+        "active-scrollup"
+    );
+}
+
+window.addEventListener("scroll", () => showScrollup("scroll-up"));

@@ -74,6 +74,29 @@ img {
   box-shadow: 0 4px 10px rgba(63, 141, 90, 0.35);
 }
 
+.scrollup {
+  position: fixed;
+  z-index: 100;
+  right: 2.5rem;
+  bottom: -100%;
+  width: 35px;
+  height: 35px;
+  border-radius: 0.25rem;
+  background-color: hsl(141deg, 38%, 40%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.scrollup:hover {
+  transform: translateY(-8px);
+}
+.scrollup.active-scrollup {
+  bottom: 2.5rem;
+}
+
 .container {
   max-width: 1148px;
   margin-inline: auto;
