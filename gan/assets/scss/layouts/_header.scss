@@ -2,8 +2,23 @@
     width: 100%;
     position: fixed;
     z-index: map-get($map: $z-indexes, $key: "fixed");
+    background-color: $white-color;
     padding-block: 1.5rem;
+    transition: .3s;
     top: 0;
+
+    &.scroll-header {
+        box-shadow: 0 1px 5px rgba($color: $main-color, $alpha: .2);
+        padding-block: .85rem;
+
+        .nav {
+            align-items: center;
+        }
+
+        .nav__logo {
+            max-width: 65px;
+        }
+    }
 
     .nav {
         display: flex;
@@ -11,6 +26,7 @@
 
         &__logo {
             max-width: 100px;
+            transition: .3s;
         }
 
         &__list {

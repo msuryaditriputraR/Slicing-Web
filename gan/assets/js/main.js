@@ -26,3 +26,22 @@ const year = document.getElementById("year");
 const date = new Date();
 
 year.innerHTML = date.getFullYear();
+
+/* ==================== SCROLL HEADER ===================== */
+function scrollHeader() {
+    const header = document.getElementById("header"),
+        logo = document.querySelector(".nav__logo img");
+    let logoName = "logo";
+
+    if (this.scrollY >= 50) {
+        header.classList.add("scroll-header");
+        logoName = "logo-icon";
+    } else {
+        header.classList.remove("scroll-header");
+        logoName = "logo";
+    }
+
+    logo.src = `./assets/img/${logoName}.png`;
+}
+
+window.addEventListener("scroll", scrollHeader);

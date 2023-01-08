@@ -83,8 +83,20 @@ img {
   width: 100%;
   position: fixed;
   z-index: 100;
+  background-color: hsl(0deg, 0%, 100%);
   padding-block: 1.5rem;
+  transition: 0.3s;
   top: 0;
+}
+.header.scroll-header {
+  box-shadow: 0 1px 5px rgba(63, 141, 90, 0.2);
+  padding-block: 0.85rem;
+}
+.header.scroll-header .nav {
+  align-items: center;
+}
+.header.scroll-header .nav__logo {
+  max-width: 65px;
 }
 .header .nav {
   display: flex;
@@ -92,6 +104,7 @@ img {
 }
 .header .nav__logo {
   max-width: 100px;
+  transition: 0.3s;
 }
 .header .nav__list {
   display: flex;
