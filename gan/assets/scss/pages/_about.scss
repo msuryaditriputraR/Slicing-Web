@@ -1,0 +1,19 @@
+.about {
+    text-align: center;
+
+    &__desc {
+        line-height: 2;
+        max-width: 80vw;
+        margin: 2.5rem auto;
+
+        br {
+            display: block;
+            content: "";
+            margin-top: .5rem;
+        }
+    }
+
+    &__img {
+        max-width: 450px;
+    }
+}

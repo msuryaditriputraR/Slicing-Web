@@ -112,6 +112,11 @@ img {
   bottom: 2.5rem;
 }
 
+.highlight {
+  color: hsl(141deg, 38%, 40%);
+  font-weight: 700;
+}
+
 .container {
   max-width: 1148px;
   margin-inline: auto;
@@ -257,10 +262,6 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-.home2 .highlight {
-  color: hsl(141deg, 38%, 40%);
-  font-weight: 700;
-}
 .home2__image {
   max-width: 430px;
 }
@@ -293,6 +294,23 @@ main {
 .home3 .swiper-button-next::after,
 .home3 .swiper-button-prev::after {
   display: none;
+}
+
+.about {
+  text-align: center;
+}
+.about__desc {
+  line-height: 2;
+  max-width: 80vw;
+  margin: 2.5rem auto;
+}
+.about__desc br {
+  display: block;
+  content: "";
+  margin-top: 0.5rem;
+}
+.about__img {
+  max-width: 450px;
 }
 
 /*# sourceMappingURL=main.css.map */
