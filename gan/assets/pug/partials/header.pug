@@ -2,10 +2,10 @@ block data
 
 header.header#header
     nav.container.nav 
-        a.nav__logo(href="./index.html") 
-            img(src="./assets/img/logo.png" alt="PT GHALIB AGRO NABATI")
+        a.nav__logo(href=baseURL + "index.html") 
+            img(src=baseURL + "assets/img/logo.png" alt="PT GHALIB AGRO NABATI")
         .nav__menu#nav-menu 
             ul.nav__list
                 each link in links 
                     li.nav__item 
-                        a.nav__link(href="./pages/" + link.page)=link.text
+                        a.nav__link(href=baseURL + "pages/" + link.page)=link.text

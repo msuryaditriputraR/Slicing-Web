@@ -2,7 +2,7 @@ footer.footer
     .container 
         .footer__top
             .footer__logo 
-                img(src="./assets/img/logo.png" alt="")
+                img(src=baseURL + "assets/img/logo.png" alt="")
             .footer__socials 
                 each ms in medsos 
                     .footer__social 
@@ -13,7 +13,7 @@ footer.footer
                 .footer__map 
                     .footer__image 
                         a(href=map.link, target="_blank" rel="noopener noreferrer" aria-describedby="map-location" + (i+1)).footer__image-link 
-                            img(src="./assets/img/maps/map" + (i+1) + ".png" alt="" aria-hidden="true")
+                            img(src=baseURL + "assets/img/maps/map" + (i+1) + ".png" alt="" aria-hidden="true")
                     p.footer__location(id="map-location" + (i+1)) !{map.loc}
         p.footer__copy 
             i.bx.bx-copyright
