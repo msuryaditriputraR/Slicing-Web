@@ -392,4 +392,44 @@ main {
   line-height: 1.5;
 }
 
+.contact {
+  text-align: center;
+}
+.contact__list {
+  margin-block: 1.5rem 3.5rem;
+}
+.contact__item {
+  margin-bottom: 0.85rem;
+}
+.contact__cards {
+  display: grid;
+  row-gap: 2rem;
+  margin-bottom: 6.5rem;
+}
+.contact__card {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+.contact__card:nth-child(even) {
+  justify-self: flex-end;
+  flex-direction: row-reverse;
+}
+.contact__card-image {
+  max-width: 150px;
+  filter: drop-shadow(4px 4px 10px rgba(13, 13, 13, 0.9));
+}
+.contact__card-list {
+  display: table;
+}
+.contact__card-item {
+  text-align: left;
+  display: table-row;
+}
+.contact__card-item .break {
+  display: table-cell;
+  padding-inline: 2.5rem 0.5rem;
+  padding-block: 0.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */

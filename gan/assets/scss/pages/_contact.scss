@@ -1,0 +1,48 @@
+.contact {
+    text-align: center;
+
+    &__list {
+        margin-block: 1.5rem 3.5rem;
+    }
+
+    &__item {
+        margin-bottom: .85rem;
+    }
+
+    &__cards {
+        display: grid;
+        row-gap: 2rem;
+        margin-bottom: 6.5rem;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        column-gap: 2.5rem;
+
+        &:nth-child(even) {
+            justify-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        &-image {
+            max-width: 150px;
+            filter: drop-shadow(4px 4px 10px rgba($text-color, .9));
+        }
+
+        &-list {
+            display: table;
+        }
+
+        &-item {
+            text-align: left;
+            display: table-row;
+
+            .break {
+                display: table-cell;
+                padding-inline: 2.5rem .5rem;
+                padding-block: .5rem;
+            }
+        }
+    }
+}
