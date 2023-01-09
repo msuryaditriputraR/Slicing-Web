@@ -2,13 +2,13 @@
     width: 100%;
     position: fixed;
     z-index: map-get($map: $z-indexes, $key: "fixed");
-    background-color: $white-color;
     padding-block: 1.5rem;
     transition: .3s;
     top: 0;
 
     &.scroll-header {
         box-shadow: 0 1px 5px rgba($color: $main-color, $alpha: .2);
+        background-color: $white-color;
         padding-block: .85rem;
 
         .nav {
