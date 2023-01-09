@@ -1,0 +1,19 @@
+extends ../partials/layout.pug
+
+block title 
+    - var title = "ARMADA DAN GUDANG KAMI"
+
+block content
+    section.armada 
+        .container
+            h1 ARMADA DAN GUDANG KAMI
+            .armada__images 
+                - var i = 1;
+                while i <= 6
+                    img(src=baseURL + "assets/img/armada/armada" + i + ".png" alt="armada" + i)
+                    - i++
+            .gudang__images
+                - var g = 1;
+                while g <= 2
+                    img(src=baseURL + "assets/img/gudang/gudang" + g + ".png" alt="gudang" + g)
+                    - g++

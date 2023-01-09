@@ -1,0 +1,26 @@
+.armada {
+    text-align: center;
+
+    &__images,
+    .gudang__images {
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            border-radius: .5rem;
+            box-shadow: 0 2px 5px rgba($color: $text-color, $alpha: .5);
+        }
+    }
+
+    &__images {
+        grid-template-columns: repeat(2, 500px);
+        margin-block: 3.5rem 4.5rem;
+    }
+
+    .gudang__images {
+        grid-template-columns: repeat(2, 400px);
+        margin-bottom: 1rem;
+    }
+}
