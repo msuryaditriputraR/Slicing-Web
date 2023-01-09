@@ -337,4 +337,42 @@ main {
   margin-bottom: 1rem;
 }
 
+.product {
+  text-align: center;
+}
+.product1 {
+  margin-block: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8.5rem;
+}
+.product1__img {
+  max-width: 250px;
+}
+.product1__table {
+  border-collapse: collapse;
+  font-size: var(--small-font-size);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(13, 13, 13, 0.15);
+}
+.product1__table th {
+  background-color: hsl(141deg, 38%, 40%);
+  color: hsl(0deg, 0%, 100%);
+}
+.product1__table tr {
+  background-color: hsl(19deg, 100%, 97%);
+}
+.product1__table tr:not(:last-child) {
+  border-bottom: 1px solid hsla(38deg, 100%, 62%, 0.5);
+}
+.product1__table tr td:nth-child(odd) {
+  border-right: 1px solid hsla(38deg, 100%, 62%, 0.5);
+}
+.product1__table th,
+.product1__table td {
+  padding: 0.85rem 3.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */

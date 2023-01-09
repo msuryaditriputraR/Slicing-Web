@@ -1,0 +1,46 @@
+.product {
+    text-align: center;
+
+    &1 {
+        margin-block: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8.5rem;
+
+        &__img {
+            max-width: 250px;
+        }
+
+        &__table {
+            border-collapse: collapse;
+            font-size: var(--small-font-size);
+            border-radius: .5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba($color: $text-color, $alpha: .15);
+
+            th {
+                background-color: $main-color;
+                color: $white-color;
+            }
+
+            tr {
+                background-color: hsl(19, 100%, 97%);
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid hsla(38, 100%, 62%, .5);
+
+                }
+
+                td:nth-child(odd) {
+                    border-right: 1px solid hsla(38, 100%, 62%, .5);
+                }
+            }
+
+            th,
+            td {
+                padding: .85rem 3.5rem;
+            }
+        }
+    }
+}

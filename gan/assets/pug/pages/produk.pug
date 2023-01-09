@@ -1,0 +1,20 @@
+extends ../partials/layout.pug
+
+block title 
+    - var title = "PRODUK KAMI"
+
+block content
+    section.product 
+        .container 
+            h1.product__title MARI MENGENAL PRODUK KAMI
+            .product1 
+                .product1 
+                    img(src= baseURL + "assets/img/produk/produk1.png" alt="Minyak Goreng Alif").product1__img
+                    table.product1__table
+                        thead 
+                            th(colspan=2) ALIF SPECT
+                        tbody 
+                            each pt in productTable
+                                tr 
+                                    td= pt.td1
+                                    td= pt.td2
