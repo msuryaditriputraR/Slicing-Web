@@ -2,14 +2,14 @@
     text-align: center;
 
     &1 {
-        margin-block: 3.5rem;
+        margin-block: 3.5rem 4.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 8.5rem;
 
         &__img {
-            max-width: 250px;
+            max-width: 280px;
         }
 
         &__table {
@@ -41,6 +41,27 @@
             td {
                 padding: .85rem 3.5rem;
             }
+        }
+    }
+
+    &2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        &__img {
+            max-width: 450px;
+        }
+
+        &__list {
+            text-align: left;
+            max-width: 28ch;
+        }
+
+        &__item {
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
         }
     }
 }

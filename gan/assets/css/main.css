@@ -341,14 +341,14 @@ main {
   text-align: center;
 }
 .product1 {
-  margin-block: 3.5rem;
+  margin-block: 3.5rem 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 8.5rem;
 }
 .product1__img {
-  max-width: 250px;
+  max-width: 280px;
 }
 .product1__table {
   border-collapse: collapse;
@@ -373,6 +373,23 @@ main {
 .product1__table th,
 .product1__table td {
   padding: 0.85rem 3.5rem;
+}
+.product2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.product2__img {
+  max-width: 450px;
+}
+.product2__list {
+  text-align: left;
+  max-width: 28ch;
+}
+.product2__item {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=main.css.map */
