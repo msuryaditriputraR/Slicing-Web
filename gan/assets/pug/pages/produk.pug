@@ -9,7 +9,7 @@ block content
             h1.product__title MARI MENGENAL PRODUK KAMI
             .product1 
                 .product1 
-                    img(src= baseURL + "assets/img/produk/produk1.png" alt="Minyak Goreng Alif").product1__img
+                    img(src= baseURL + "assets/img/produk/produk1.png" alt="Minyak Goreng Alif" loading="lazy").product1__img
                     table.product1__table
                         thead 
                             th(colspan=2) ALIF SPECT
@@ -19,7 +19,7 @@ block content
                                     td= pt.td1
                                     td= pt.td2
             .product2 
-                img(src= baseURL + "assets/img/produk/produk2.png" alt="Minyak Goreng Alif").product2__img
+                img(src= baseURL + "assets/img/produk/produk2.png" alt="Minyak Goreng Alif" loading="lazy").product2__img
                 ul.product2__list
                     each pl in productList
                         li.product2__item= pl

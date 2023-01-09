@@ -13,7 +13,7 @@ footer.footer
                 .footer__map 
                     .footer__image 
                         a(href=map.link, target="_blank" rel="noopener noreferrer" aria-describedby="map-location" + (i+1)).footer__image-link 
-                            img(src=baseURL + "assets/img/maps/map" + (i+1) + ".png" alt="" aria-hidden="true")
+                            img(src=baseURL + "assets/img/maps/map" + (i+1) + ".png" alt="" aria-hidden="true" loading="lazy")
                     p.footer__location(id="map-location" + (i+1)) !{map.loc}
         p.footer__copy 
             i.bx.bx-copyright
