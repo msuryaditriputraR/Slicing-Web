@@ -1,3 +1,6 @@
+/* ==================== BASE URL ===================== */
+const baseURL = window.location.origin;
+
 /* ==================== TEAMS SLIDER ===================== */
 const swiper = new Swiper(".home3__teams", {
     effect: "coverflow",
@@ -41,7 +44,7 @@ function scrollHeader() {
         logoName = "logo";
     }
 
-    logo.src = `./assets/img/${logoName}.png`;
+    logo.src = `${baseURL}/assets/img/${logoName}.png`;
 }
 
 window.addEventListener("scroll", scrollHeader);
