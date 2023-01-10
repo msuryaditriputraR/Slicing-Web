@@ -21,7 +21,8 @@ sans-serif;
     --title-font-size: 2rem;
     --normal-font-size: 1.185rem;
     --navLink-font-size: 1.125rem;
-    --small-font-size: .825rem;
+    --small-font-size: .785rem;
+    --smaller-font-size: .585rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -29,7 +30,8 @@ sans-serif;
         --title-font-size: 2.5rem;
         --normal-font-size: 1.315rem;
         --navLink-font-size: 1.215rem;
-        --small-font-size: 1.015rem;
+        --small-font-size: .985rem;
+        --smaller-font-size: .785rem;
     }
 }
 
