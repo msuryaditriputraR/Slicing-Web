@@ -39,11 +39,17 @@
     &__maps {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
         column-gap: 2rem;
         justify-content: space-between;
-        align-items: center;
         text-align: center;
         padding-block: 3.5rem;
+
+        @include breakpoints-down("tablet") {
+            & {
+                column-gap: 1.5rem;
+            }
+        }
     }
 
     &__image {
@@ -65,7 +71,7 @@
     }
 
     &__copy {
-        font-size: .785rem;
+        font-size: var(--smaller-font-size);
         display: flex;
         justify-content: center;
         align-items: center;
