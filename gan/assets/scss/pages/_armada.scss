@@ -17,10 +17,22 @@
     &__images {
         grid-template-columns: repeat(2, 500px);
         margin-block: 3.5rem 4.5rem;
+
+        @include breakpoints-down("large") {
+            & {
+                grid-template-columns: repeat(2, 400px);
+            }
+        }
     }
 
     .gudang__images {
         grid-template-columns: repeat(2, 400px);
         margin-bottom: 1rem;
+
+        @include breakpoints-down("large") {
+            & {
+                grid-template-columns: repeat(2, 300px);
+            }
+        }
     }
 }

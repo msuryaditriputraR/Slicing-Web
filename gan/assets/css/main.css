@@ -258,6 +258,11 @@ main {
 .home1__image {
   max-width: 580px;
 }
+@media screen and (max-width: 1024px) {
+  .home1__image {
+    max-width: 480px;
+  }
+}
 
 /* ==================== HOME 2 ===================== */
 .home2 {
@@ -271,6 +276,11 @@ main {
 }
 .home2__image {
   max-width: 430px;
+}
+@media screen and (max-width: 1024px) {
+  .home2__image {
+    max-width: 400px;
+  }
 }
 .home2__desc {
   line-height: 1.65;
@@ -339,9 +349,19 @@ main {
   grid-template-columns: repeat(2, 500px);
   margin-block: 3.5rem 4.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .armada__images {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
 .armada .gudang__images {
   grid-template-columns: repeat(2, 400px);
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .armada .gudang__images {
+    grid-template-columns: repeat(2, 300px);
+  }
 }
 
 .product {

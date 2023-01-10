@@ -20,6 +20,12 @@
 
     &__image {
         max-width: 580px;
+
+        @include breakpoints-down("large") {
+            & {
+                max-width: 480px;
+            }
+        }
     }
 }
 
@@ -36,6 +42,12 @@
 
     &__image {
         max-width: 430px;
+
+        @include breakpoints-down("large") {
+            & {
+                max-width: 400px;
+            }
+        }
     }
 
     &__desc {
