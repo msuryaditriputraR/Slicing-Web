@@ -1,5 +1,6 @@
 .contact {
     text-align: center;
+    position: relative;
 
     &__list {
         margin-block: 1.5rem 3.5rem;
@@ -13,6 +14,7 @@
         display: grid;
         row-gap: 2rem;
         margin-bottom: 6.5rem;
+        position: relative;
     }
 
     &__card {
@@ -43,6 +45,47 @@
                 padding-inline: 2.5rem .5rem;
                 padding-block: .5rem;
             }
+        }
+    }
+
+    .blob {
+        position: absolute;
+        max-width: 450px;
+        z-index: map-get($map: $z-indexes, $key: "back");
+        transform: translateY(-10%);
+
+
+        &:nth-child(odd) {
+            left: 0;
+        }
+
+        &:nth-child(even) {
+            right: 0;
+        }
+
+        &-1 {
+            top: 10%;
+        }
+
+        &-2 {
+            top: 30%;
+        }
+
+        &-3 {
+            top: 50%;
+        }
+
+        &-4 {
+            top: 65%;
+        }
+
+        &-5 {
+            top: 80%;
+        }
+
+
+        &-6 {
+            top: 95%;
         }
     }
 }

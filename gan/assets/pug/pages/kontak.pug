@@ -5,6 +5,10 @@ block title
 
 block content
     section.contact 
+        - var i = 1;
+        while (i <= 5)
+            img(src=baseURL + "assets/img/blob/blob" + i + ".svg" alt="" aria-hidden="true" loading="lazy" class="blob blob-" + i)
+            - i++
         .container 
             h1.contact__title HUBUNGI KAMI
             ul.contact__list 

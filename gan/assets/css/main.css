@@ -394,6 +394,7 @@ main {
 
 .contact {
   text-align: center;
+  position: relative;
 }
 .contact__list {
   margin-block: 1.5rem 3.5rem;
@@ -405,6 +406,7 @@ main {
   display: grid;
   row-gap: 2rem;
   margin-bottom: 6.5rem;
+  position: relative;
 }
 .contact__card {
   display: flex;
@@ -430,6 +432,36 @@ main {
   display: table-cell;
   padding-inline: 2.5rem 0.5rem;
   padding-block: 0.5rem;
+}
+.contact .blob {
+  position: absolute;
+  max-width: 450px;
+  z-index: -1;
+  transform: translateY(-10%);
+}
+.contact .blob:nth-child(odd) {
+  left: 0;
+}
+.contact .blob:nth-child(even) {
+  right: 0;
+}
+.contact .blob-1 {
+  top: 10%;
+}
+.contact .blob-2 {
+  top: 30%;
+}
+.contact .blob-3 {
+  top: 50%;
+}
+.contact .blob-4 {
+  top: 65%;
+}
+.contact .blob-5 {
+  top: 80%;
+}
+.contact .blob-6 {
+  top: 95%;
 }
 
 /*# sourceMappingURL=main.css.map */
