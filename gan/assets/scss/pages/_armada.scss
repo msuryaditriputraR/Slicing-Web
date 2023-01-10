@@ -16,7 +16,7 @@
 
     &__images {
         grid-template-columns: repeat(2, 500px);
-        margin-block: 3.5rem 4.5rem;
+        margin-bottom: 4.5rem;
 
         @include breakpoints-down("large") {
             & {
