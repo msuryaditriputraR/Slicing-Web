@@ -6,7 +6,7 @@ const swiper = new Swiper(".home3__teams", {
     effect: "coverflow",
     centeredSlides: true,
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     coverflowEffect: {
         rotate: 0,
         modifier: 2.5,
@@ -21,6 +21,11 @@ const swiper = new Swiper(".home3__teams", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        568: {
+            slidesPerView: 2,
+        },
     },
 });
 
