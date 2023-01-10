@@ -19,6 +19,7 @@ sans-serif;
 // FONT SIZE
 :root {
     --title-font-size: 2rem;
+    --subtitle-font-size: 1.5rem;
     --normal-font-size: 1.185rem;
     --navLink-font-size: 1.125rem;
     --small-font-size: .785rem;
@@ -28,6 +29,7 @@ sans-serif;
 @media screen and (min-width: 1024px) {
     :root {
         --title-font-size: 2.5rem;
+        --subtitle-font-size: 2rem;
         --normal-font-size: 1.315rem;
         --navLink-font-size: 1.215rem;
         --small-font-size: .985rem;
