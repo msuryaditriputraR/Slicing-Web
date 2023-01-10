@@ -19,18 +19,16 @@ sans-serif;
 // FONT SIZE
 :root {
     --title-font-size: 2rem;
-    --subtitle-font-size: 1.35rem;
-    --medium-font-size: 1.285rem;
-    --normal-font-size: .938rem;
+    --normal-font-size: 1.185rem;
+    --navLink-font-size: 1.125rem;
     --small-font-size: .825rem;
 }
 
 @media screen and (min-width: 1024px) {
     :root {
         --title-font-size: 2.5rem;
-        --subtitle-font-size: 1.785rem;
-        --medium-font-size: 1.585rem;
         --normal-font-size: 1.315rem;
+        --navLink-font-size: 1.215rem;
         --small-font-size: 1.015rem;
     }
 }
@@ -38,8 +36,7 @@ sans-serif;
 @media screen and (max-width: 375px) {
     :root {
         --title-font-size: 1.675rem;
-        --subtitle-font-size: 1.35rem;
-        --medium-font-size: 1.15rem;
+        --navLink-font-size: 1.15rem;
         --normal-font-size: .898rem;
     }
 }

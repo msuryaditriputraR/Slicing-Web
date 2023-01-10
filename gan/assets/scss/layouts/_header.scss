@@ -37,7 +37,7 @@
         &__link {
             color: $text-color;
             transition: .3s;
-            font-size: 1.215rem;
+            font-size: var(--navLink-font-size);
 
             &.active,
             &:hover {
