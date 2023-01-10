@@ -16,6 +16,12 @@
     &__socials {
         display: flex;
         column-gap: 1.5rem;
+
+        @include breakpoints-down("tablet") {
+            & {
+                column-gap: 1rem;
+            }
+        }
     }
 
     &__social {
@@ -33,6 +39,14 @@
             background-color: $white-color;
             color: $main-color;
             border-radius: 50%;
+        }
+
+        @include breakpoints-down("tablet") {
+            & {
+                width: 20px;
+                height: 20px;
+                font-size: .85rem;
+            }
         }
     }
 

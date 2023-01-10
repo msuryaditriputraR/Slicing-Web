@@ -12,6 +12,12 @@
             border-radius: .5rem;
             box-shadow: 0 2px 5px rgba($color: $text-color, $alpha: .5);
         }
+
+        @include breakpoints-down("tablet") {
+            & {
+                grid-template-columns: repeat(2, 300px) !important;
+            }
+        }
     }
 
     &__images {

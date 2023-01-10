@@ -27,6 +27,19 @@
             }
         }
     }
+
+    @include breakpoints-down("tablet") {
+        & {
+            padding-top: 1.5rem;
+            padding-bottom: 4.5rem;
+        }
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 3.5rem;
+        }
+    }
 }
 
 /* ==================== HOME 2 ===================== */
@@ -53,6 +66,18 @@
     &__desc {
         line-height: 1.65;
         margin-bottom: 2.25rem;
+    }
+
+    @include breakpoints-down("tablet") {
+        & {
+            padding-block: 2.5rem 3.5rem;
+        }
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 3.5rem;
+        }
     }
 }
 

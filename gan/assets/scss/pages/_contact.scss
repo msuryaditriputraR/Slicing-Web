@@ -54,6 +54,11 @@
         z-index: map-get($map: $z-indexes, $key: "back");
         transform: translateY(-10%);
 
+        @include breakpoints-down("tablet") {
+            & {
+                max-width: 370px;
+            }
+        }
 
         &:nth-child(odd) {
             left: 0;
