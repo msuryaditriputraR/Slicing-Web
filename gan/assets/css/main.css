@@ -652,7 +652,7 @@ main {
     max-width: 300px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .product2__img {
     max-width: 250px;
   }

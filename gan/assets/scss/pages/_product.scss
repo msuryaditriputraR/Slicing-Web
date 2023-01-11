@@ -93,7 +93,7 @@
             }
         }
 
-        @include breakpoints-down("small") {
+        @include breakpoints-down("very-small") {
             &__img {
                 max-width: 250px;
             }
