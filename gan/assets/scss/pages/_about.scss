@@ -15,5 +15,11 @@
 
     &__img {
         max-width: 450px;
+
+        @include breakpoints-down("medium") {
+            & {
+                width: 75%;
+            }
+        }
     }
 }
