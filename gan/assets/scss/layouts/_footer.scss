@@ -7,6 +7,15 @@
         align-items: flex-end;
         padding-bottom: 1rem;
         border-bottom: 1px solid hsl(0, 0%, 60%);
+
+        @include breakpoints-down("small") {
+            & {
+                flex-direction: column;
+                row-gap: 1.5rem;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 
     &__logo {
@@ -65,9 +74,16 @@
             }
         }
 
-        @include breakpoints-down("tablet") {
+        @include breakpoints-down("medium") {
             & {
                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @include breakpoints-down("small") {
+            & {
+                padding-block: 2.5rem;
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     }
@@ -82,6 +98,13 @@
 
         &:hover &-link img {
             transform: scale(1.2);
+        }
+
+        @include breakpoints-down("small") {
+            & {
+                max-width: 200px;
+                margin-inline: auto;
+            }
         }
     }
 
