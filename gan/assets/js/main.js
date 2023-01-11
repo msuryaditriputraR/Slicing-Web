@@ -7,6 +7,7 @@ const swiper = new Swiper(".home3__teams", {
     centeredSlides: true,
     loop: true,
     slidesPerView: 1,
+    spaceBetween: 100,
     coverflowEffect: {
         rotate: 0,
         modifier: 2.5,
@@ -25,6 +26,7 @@ const swiper = new Swiper(".home3__teams", {
     breakpoints: {
         568: {
             slidesPerView: 2,
+            spaceBetween: 50,
         },
     },
 });
