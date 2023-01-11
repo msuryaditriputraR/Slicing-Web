@@ -1,25 +1,6 @@
 .armada {
     text-align: center;
 
-    &__images,
-    .gudang__images {
-        display: grid;
-        gap: 2rem;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            border-radius: .5rem;
-            box-shadow: 0 2px 5px rgba($color: $text-color, $alpha: .5);
-        }
-
-        @include breakpoints-down("tablet") {
-            & {
-                grid-template-columns: repeat(2, 300px) !important;
-            }
-        }
-    }
-
     &__images {
         grid-template-columns: repeat(2, 500px);
         margin-bottom: 4.5rem;
@@ -38,6 +19,31 @@
         @include breakpoints-down("large") {
             & {
                 grid-template-columns: repeat(2, 300px);
+            }
+        }
+    }
+
+    &__images,
+    .gudang__images {
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            border-radius: .5rem;
+            box-shadow: 0 2px 5px rgba($color: $text-color, $alpha: .5);
+        }
+
+        @include breakpoints-down("tablet") {
+            & {
+                grid-template-columns: repeat(2, 300px);
+            }
+        }
+
+        @include breakpoints-down("medium") {
+            & {
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     }
