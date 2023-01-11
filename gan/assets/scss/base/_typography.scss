@@ -39,11 +39,24 @@ sans-serif;
 
 @media screen and (max-width: 568px) {
     :root {
-        --title-font-size: 1.575rem;
+        --title-font-size: 1.675rem;
         --subtitle-font-size: 1.325rem;
         --navLink-font-size: 1.15rem;
         --normal-font-size: 1.015rem;
         --small-font-size: .835rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    :root {
+        --title-font-size: 1.475rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        --title-font-size: 1.325rem;
+        --subtitle-font-size: 1.285rem;
     }
 }
 
