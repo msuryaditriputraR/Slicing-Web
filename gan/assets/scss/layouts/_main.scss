@@ -1,10 +1,10 @@
 main {
     margin-top: 8rem;
+    overflow: hidden;
 
     @include breakpoints-down("small") {
         & {
             margin-top: 5rem;
-            overflow: hidden;
         }
     }
 }

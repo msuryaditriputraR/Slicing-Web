@@ -88,3 +88,35 @@ function toggleMenu(idToggle, idMenu) {
 }
 
 toggleMenu("nav-toggle", "nav-menu");
+
+/* ==================== SCROLL REVEAL ANIMATION ===================== */
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 3000,
+    delay: 400,
+    reset: true,
+});
+
+sr.reveal(".home1__title, .home3__title,.section-title, .footer__logo");
+sr.reveal(".home1__desc, .about__desc, .armada__img, .contact__list", {
+    delay: 500,
+});
+sr.reveal(".home1__image, .gudang__img", { delay: 600 });
+sr.reveal(".home1 .btn, .about__img", { delay: 700 });
+sr.reveal(
+    ".nav__item, .footer__social, .footer__map, .armada__img, .gudang__img, .contact__item, .contact__card",
+    { interval: 100 }
+);
+sr.reveal(".nav__item", { reset: false });
+sr.reveal(
+    ".home2__image, .product1__img, .product2__img, .contact__card:nth-child(odd)",
+    { origin: "left" }
+);
+sr.reveal(
+    ".home2__info, .product1__table, .product2__list, .contact__card:nth-child(even)",
+    {
+        origin: "right",
+    }
+);
+sr.reveal(".home3 .btn", { origin: "bottom" });

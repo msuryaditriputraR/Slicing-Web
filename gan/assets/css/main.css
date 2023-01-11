@@ -285,11 +285,11 @@ img {
 
 main {
   margin-top: 8rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 375px) {
   main {
     margin-top: 5rem;
-    overflow: hidden;
   }
 }
 
