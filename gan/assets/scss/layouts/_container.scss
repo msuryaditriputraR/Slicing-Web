@@ -13,4 +13,10 @@
             margin-inline: 1.5rem;
         }
     }
+
+    @include breakpoints-down('very-small') {
+        & {
+            margin-inline: 1rem;
+        }
+    }
 }
