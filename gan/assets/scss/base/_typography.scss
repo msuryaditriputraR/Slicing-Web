@@ -50,6 +50,8 @@ sans-serif;
 @media screen and (max-width: 375px) {
     :root {
         --title-font-size: 1.475rem;
+        --navLink-font-size: 1.015rem;
+        --normal-font-size: .985rem;
     }
 }
 
@@ -57,6 +59,8 @@ sans-serif;
     :root {
         --title-font-size: 1.325rem;
         --subtitle-font-size: 1.285rem;
+        --navLink-font-size: 1rem;
+        --normal-font-size: .925rem;
     }
 }
 
