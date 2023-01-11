@@ -1,3 +1,9 @@
 main {
     margin-top: 8rem;
+
+    @include breakpoints-down("small") {
+        & {
+            margin-top: 5rem;
+        }
+    }
 }

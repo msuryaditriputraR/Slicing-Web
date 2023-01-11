@@ -285,6 +285,11 @@ img {
 main {
   margin-top: 8rem;
 }
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 5rem;
+  }
+}
 
 .footer {
   margin-top: 4.5rem;
