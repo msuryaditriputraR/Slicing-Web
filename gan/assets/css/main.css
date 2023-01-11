@@ -130,6 +130,11 @@ img {
   color: hsl(141deg, 38%, 40%);
   font-weight: 700;
 }
+@media screen and (max-width: 375px) {
+  .highlight {
+    display: inline-block;
+  }
+}
 
 .container {
   max-width: 1148px;

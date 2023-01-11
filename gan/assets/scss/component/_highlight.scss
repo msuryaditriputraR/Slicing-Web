@@ -1,4 +1,10 @@
 .highlight {
     color: $main-color;
     font-weight: map-get($map: $font-weights, $key: "bold");
+
+    @include breakpoints-down("small") {
+        & {
+            display: inline-block;
+        }
+    }
 }
