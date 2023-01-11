@@ -8,16 +8,15 @@ block content
         .container 
             h1.section-title MARI MENGENAL <br> PRODUK KAMI
             .product1 
-                .product1 
-                    img(src= baseURL + "assets/img/produk/produk1.png" alt="Minyak Goreng Alif" loading="lazy").product1__img
-                    table.product1__table
-                        thead 
-                            th(colspan=2) ALIF SPECT
-                        tbody 
-                            each pt in productTable
-                                tr 
-                                    td= pt.td1
-                                    td= pt.td2
+                img(src= baseURL + "assets/img/produk/produk1.png" alt="Minyak Goreng Alif" loading="lazy").product1__img
+                table.product1__table
+                    thead 
+                        th(colspan=2) ALIF SPECT
+                    tbody 
+                        each pt in productTable
+                            tr 
+                                td= pt.td1
+                                td= pt.td2
             .product2 
                 img(src= baseURL + "assets/img/produk/produk2.png" alt="Minyak Goreng Alif" loading="lazy").product2__img
                 ul.product2__list
