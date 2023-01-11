@@ -383,6 +383,16 @@ main {
   text-align: center;
   padding-block: 4.5rem 5.5rem;
 }
+.home3__title {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 568px) {
+  .home3__title {
+    max-width: 25ch;
+    margin-inline: auto;
+    line-height: 1.6;
+  }
+}
 .home3__teams {
   margin-block: 2.5rem 4.5rem;
   padding-block: 0.5rem;
