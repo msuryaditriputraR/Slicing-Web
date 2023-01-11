@@ -13,6 +13,12 @@
 
         .nav {
             align-items: center;
+
+            @include breakpoints-down("medium") {
+                &__menu {
+                    top: 4.5rem !important;
+                }
+            }
         }
 
         .nav__logo {
@@ -42,6 +48,49 @@
             &.active,
             &:hover {
                 color: $main-color;
+            }
+        }
+
+        &__toggle {
+            display: none;
+        }
+
+        @include breakpoints-down("medium") {
+            &__menu {
+                position: fixed;
+                top: 7.5rem;
+                left: 0;
+                z-index: map-get($map: $z-indexes, $key: "fixed");
+                transition: .3s;
+                width: 100%;
+                background-color: $white-color;
+                padding-block: 1rem;
+                box-shadow: 0 4px 5px rgba($color: $main-color, $alpha: .2);
+                border-radius: 0 0 2.5rem 2.5rem;
+                transform: scaleY(0);
+                transform-origin: top;
+
+                &.active-menu {
+                    transform: scaleY(1);
+                    transform-origin: bottom;
+                }
+            }
+
+            &__list {
+                flex-direction: column;
+                text-align: center;
+                row-gap: 1.5rem;
+            }
+
+            &__toggle {
+                display: inline;
+                width: 35px;
+                height: 35px;
+                border-radius: .25rem;
+                font-size: 2.15rem;
+                align-self: center;
+                box-shadow: 0 1px 10px rgba($color: $main-color, $alpha: .15);
+                cursor: pointer;
             }
         }
     }

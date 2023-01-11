@@ -64,3 +64,25 @@ function showScrollup(idScrollUp) {
 }
 
 window.addEventListener("scroll", () => showScrollup("scroll-up"));
+
+/* ==================== TOGGLE MENU ===================== */
+function toggleMenu(idToggle, idMenu) {
+    const navToggle = document.getElementById(idToggle);
+    const navMenu = document.getElementById(idMenu);
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle("active-menu");
+        });
+
+        navMenu.addEventListener("click", (e) => e.stopPropagation());
+
+        document.body.addEventListener("click", () => {
+            if (navMenu.classList.contains("active-menu"))
+                navMenu.classList.remove("active-menu");
+        });
+    }
+}
+
+toggleMenu("nav-toggle", "nav-menu");

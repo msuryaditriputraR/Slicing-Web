@@ -155,6 +155,11 @@ img {
 .header.scroll-header .nav {
   align-items: center;
 }
+@media screen and (max-width: 568px) {
+  .header.scroll-header .nav__menu {
+    top: 4.5rem !important;
+  }
+}
 .header.scroll-header .nav__logo {
   max-width: 65px;
 }
@@ -177,6 +182,44 @@ img {
 }
 .header .nav__link.active, .header .nav__link:hover {
   color: hsl(141deg, 38%, 40%);
+}
+.header .nav__toggle {
+  display: none;
+}
+@media screen and (max-width: 568px) {
+  .header .nav__menu {
+    position: fixed;
+    top: 7.5rem;
+    left: 0;
+    z-index: 100;
+    transition: 0.3s;
+    width: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    padding-block: 1rem;
+    box-shadow: 0 4px 5px rgba(63, 141, 90, 0.2);
+    border-radius: 0 0 2.5rem 2.5rem;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  .header .nav__menu.active-menu {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  .header .nav__list {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5rem;
+  }
+  .header .nav__toggle {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    border-radius: 0.25rem;
+    font-size: 2.15rem;
+    align-self: center;
+    box-shadow: 0 1px 10px rgba(63, 141, 90, 0.15);
+    cursor: pointer;
+  }
 }
 
 main {
