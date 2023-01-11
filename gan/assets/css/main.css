@@ -28,11 +28,13 @@
     --smaller-font-size: .785rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 568px) {
   :root {
     --title-font-size: 1.675rem;
+    --subtitle-font-size: 1.325rem;
     --navLink-font-size: 1.15rem;
-    --normal-font-size: .898rem;
+    --normal-font-size: 1.015rem;
+    --small-font-size: .835rem;
   }
 }
 *,
