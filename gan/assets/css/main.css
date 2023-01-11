@@ -99,6 +99,7 @@ img {
 @media screen and (max-width: 375px) {
   .section-title {
     line-height: 1.5;
+    margin-bottom: 1.5rem;
   }
   .section-title br {
     display: initial;
