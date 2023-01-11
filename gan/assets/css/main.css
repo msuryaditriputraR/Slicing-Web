@@ -30,11 +30,22 @@
 }
 @media screen and (max-width: 568px) {
   :root {
-    --title-font-size: 1.575rem;
+    --title-font-size: 1.675rem;
     --subtitle-font-size: 1.325rem;
     --navLink-font-size: 1.15rem;
     --normal-font-size: 1.015rem;
     --small-font-size: .835rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  :root {
+    --title-font-size: 1.475rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  :root {
+    --title-font-size: 1.325rem;
+    --subtitle-font-size: 1.285rem;
   }
 }
 *,
@@ -73,9 +84,20 @@ img {
   margin-bottom: 2.5rem;
   font-size: var(--subtitle-font-size);
 }
+.section-title br {
+  display: none;
+}
 @media screen and (max-width: 568px) {
   .section-title {
     padding-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-title {
+    line-height: 1.5;
+  }
+  .section-title br {
+    display: initial;
   }
 }
 
@@ -148,6 +170,11 @@ img {
 @media screen and (max-width: 375px) {
   .container {
     margin-inline: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
   }
 }
 
