@@ -52,6 +52,13 @@
                 }
             }
         }
+
+        @include breakpoints-down("medium") {
+            & {
+                flex-direction: column;
+                row-gap: 2.5rem;
+            }
+        }
     }
 
     &2 {
@@ -77,6 +84,19 @@
         @include breakpoints-down("tablet") {
             &__img {
                 max-width: 300px;
+            }
+        }
+
+        @include breakpoints-down("medium") {
+            & {
+                flex-direction: column;
+                row-gap: 3.5rem;
+            }
+
+            &__list {
+                text-align: center;
+                max-width: 70%;
+                margin-inline: auto;
             }
         }
     }

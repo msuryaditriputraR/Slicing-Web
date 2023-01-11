@@ -526,6 +526,12 @@ main {
     max-width: 230px;
   }
 }
+@media screen and (max-width: 568px) {
+  .product1 {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+}
 .product2 {
   display: flex;
   justify-content: space-evenly;
@@ -546,6 +552,17 @@ main {
 @media screen and (max-width: 768px) {
   .product2__img {
     max-width: 300px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .product2 {
+    flex-direction: column;
+    row-gap: 3.5rem;
+  }
+  .product2__list {
+    text-align: center;
+    max-width: 70%;
+    margin-inline: auto;
   }
 }
 
