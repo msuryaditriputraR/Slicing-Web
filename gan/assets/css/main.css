@@ -743,6 +743,11 @@ main {
     max-width: 370px;
   }
 }
+@media screen and (max-width: 375px) {
+  .contact .blob {
+    max-width: 300px;
+  }
+}
 .contact .blob:nth-child(odd) {
   left: 0;
 }

@@ -86,6 +86,12 @@
             }
         }
 
+        @include breakpoints-down("small") {
+            & {
+                max-width: 300px;
+            }
+        }
+
         &:nth-child(odd) {
             left: 0;
         }
