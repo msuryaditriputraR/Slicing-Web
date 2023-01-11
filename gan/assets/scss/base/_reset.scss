@@ -35,6 +35,12 @@ img {
 .section-title {
     margin-bottom: 2.5rem;
     font-size: var(--subtitle-font-size);
+
+    @include breakpoints-down("medium") {
+        & {
+            padding-top: 2.5rem;
+        }
+    }
 }
 
 /* ==================== SCROLL BAR ===================== */

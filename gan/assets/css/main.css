@@ -71,6 +71,11 @@ img {
   margin-bottom: 2.5rem;
   font-size: var(--subtitle-font-size);
 }
+@media screen and (max-width: 568px) {
+  .section-title {
+    padding-top: 2.5rem;
+  }
+}
 
 /* ==================== SCROLL BAR ===================== */
 ::-webkit-scrollbar {
