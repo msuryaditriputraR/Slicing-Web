@@ -36,9 +36,23 @@ img {
     margin-bottom: 2.5rem;
     font-size: var(--subtitle-font-size);
 
+    br {
+        display: none;
+    }
+
     @include breakpoints-down("medium") {
         & {
             padding-top: 2.5rem;
+        }
+    }
+
+    @include breakpoints-down("small") {
+        & {
+            line-height: 1.5;
+        }
+
+        br {
+            display: initial;
         }
     }
 }
