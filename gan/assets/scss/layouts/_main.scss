@@ -4,6 +4,7 @@ main {
     @include breakpoints-down("small") {
         & {
             margin-top: 5rem;
+            overflow: hidden;
         }
     }
 }
