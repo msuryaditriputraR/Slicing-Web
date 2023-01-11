@@ -19,6 +19,12 @@
                     top: 4.5rem !important;
                 }
             }
+
+            @include breakpoints-down("small") {
+                &__menu {
+                    top: 3.5rem !important;
+                }
+            }
         }
 
         .nav__logo {
@@ -112,6 +118,12 @@
                         font-size: 1.65rem;
                     }
                 }
+            }
+        }
+
+        @include breakpoints-down("small") {
+            &__menu {
+                top: 6rem;
             }
         }
     }

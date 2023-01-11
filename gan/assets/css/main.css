@@ -204,6 +204,11 @@ img {
     top: 4.5rem !important;
   }
 }
+@media screen and (max-width: 375px) {
+  .header.scroll-header .nav__menu {
+    top: 3.5rem !important;
+  }
+}
 .header.scroll-header .nav__logo {
   max-width: 65px;
 }
@@ -280,6 +285,11 @@ img {
 @media screen and (max-width: 568px) and (max-width: 375px) {
   .header .nav__toggle {
     font-size: 1.65rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header .nav__menu {
+    top: 6rem;
   }
 }
 
