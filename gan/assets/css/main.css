@@ -588,6 +588,11 @@ main {
   margin-bottom: 6.5rem;
   position: relative;
 }
+@media screen and (max-width: 568px) {
+  .contact__cards {
+    row-gap: 3.5rem;
+  }
+}
 .contact__card {
   display: flex;
   align-items: center;
@@ -612,6 +617,22 @@ main {
   display: table-cell;
   padding-inline: 2.5rem 0.5rem;
   padding-block: 0.5rem;
+}
+@media screen and (max-width: 568px) {
+  .contact__card {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 1.5rem;
+  }
+  .contact__card-info {
+    width: 90%;
+  }
+  .contact__card:nth-child(even) {
+    flex-direction: column;
+  }
+  .contact__card-item {
+    line-height: 1.5;
+  }
 }
 .contact .blob {
   position: absolute;
