@@ -40,6 +40,12 @@
             th,
             td {
                 padding: .85rem 3.5rem;
+
+                @include breakpoints-down('small') {
+                    & {
+                        padding: .5rem 2rem;
+                    }
+                }
             }
         }
 
@@ -84,6 +90,12 @@
         @include breakpoints-down("tablet") {
             &__img {
                 max-width: 300px;
+            }
+        }
+
+        @include breakpoints-down("small") {
+            &__img {
+                max-width: 250px;
             }
         }
 

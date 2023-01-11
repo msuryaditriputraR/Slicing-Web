@@ -610,6 +610,12 @@ main {
 .product1__table td {
   padding: 0.85rem 3.5rem;
 }
+@media screen and (max-width: 375px) {
+  .product1__table th,
+  .product1__table td {
+    padding: 0.5rem 2rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .product1 {
     column-gap: 3.5rem;
@@ -644,6 +650,11 @@ main {
 @media screen and (max-width: 768px) {
   .product2__img {
     max-width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .product2__img {
+    max-width: 250px;
   }
 }
 @media screen and (max-width: 568px) {
