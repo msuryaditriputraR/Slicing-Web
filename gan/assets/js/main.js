@@ -105,10 +105,9 @@ sr.reveal(".home1__desc, .about__desc, .armada__img, .contact__list", {
 sr.reveal(".home1__image, .gudang__img", { delay: 600 });
 sr.reveal(".home1 .btn, .about__img", { delay: 700 });
 sr.reveal(
-    ".nav__item, .footer__social, .footer__map, .armada__img, .gudang__img, .contact__item, .contact__card",
+    ".footer__social, .footer__map, .armada__img, .gudang__img, .contact__item, .contact__card",
     { interval: 100 }
 );
-sr.reveal(".nav__item", { reset: false });
 sr.reveal(
     ".home2__image, .product1__img, .product2__img, .contact__card:nth-child(odd)",
     { origin: "left" }
