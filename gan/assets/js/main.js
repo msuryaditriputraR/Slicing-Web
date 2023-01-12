@@ -95,7 +95,7 @@ const sr = ScrollReveal({
     distance: "60px",
     duration: 3000,
     delay: 400,
-    reset: true,
+    // reset: true,
 });
 
 sr.reveal(".home1__title, .home3__title,.section-title, .footer__logo");
