@@ -18,7 +18,7 @@ block content
                 each cp, i in contactPerson
                     .contact__card 
                         .contact__card-image 
-                            img(src=baseURL + "assets/img/team/team"+ (i+1) + ".png" alt=cp.nama loading="lazy")
+                            img(src=baseURL + "assets/img/team/team-"+ (i+1) + ".png" alt=cp.nama loading="lazy")
                         .contact__card-info 
                             ul.contact__card-list 
                                 each cli in [["Nama", cp.nama ], ["WhatsApp", cp.whatsapp], ["Email", cp.email], ["Jabatan", cp.jabatan]]
