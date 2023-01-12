@@ -37,7 +37,7 @@
     --small-font-size: .835rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   :root {
     --title-font-size: 1.475rem;
     --navLink-font-size: 1.015rem;
@@ -101,6 +101,8 @@ img {
     line-height: 1.5;
     margin-bottom: 1.5rem;
   }
+}
+@media screen and (max-width: 405px) {
   .section-title br {
     display: initial;
   }

@@ -51,7 +51,9 @@ img {
             line-height: 1.5;
             margin-bottom: 1.5rem;
         }
+    }
 
+    @media screen and (max-width: 405px) {
         br {
             display: initial;
         }
