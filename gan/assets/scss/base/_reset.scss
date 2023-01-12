@@ -75,3 +75,16 @@ img {
         background-color: $scroll-thumb-hover-color;
     }
 }
+
+/* ==================== ZOOM ===================== */
+@include breakpoints-up("2k") {
+    body {
+        zoom: 1.5;
+    }
+}
+
+@include breakpoints-up("4k") {
+    body {
+        zoom: 2.5;
+    }
+}

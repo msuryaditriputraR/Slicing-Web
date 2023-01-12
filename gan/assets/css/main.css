@@ -123,6 +123,17 @@ img {
   background-color: hsl(141deg, 38%, 40%);
 }
 
+/* ==================== ZOOM ===================== */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+@media screen and (min-width: 3096px) {
+  body {
+    zoom: 2.5;
+  }
+}
 .btn {
   background-color: hsl(141deg, 38%, 40%);
   color: hsl(0deg, 0%, 100%);
