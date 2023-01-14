@@ -1,6 +1,60 @@
 .product {
     text-align: center;
 
+    &s {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 2.5rem 6.5rem;
+
+        @include breakpoints-down('large') {
+            & {
+                grid-template-columns: repeat(3, 225px);
+            }
+        }
+
+        @include breakpoints-down('tablet') {
+            & {
+                grid-template-columns: repeat(2, 300px);
+                gap: 2.5rem;
+                justify-content: center;
+            }
+        }
+
+        @include breakpoints-down('medium') {
+            & {
+                grid-template-columns: repeat(1, 1fr);
+                padding-block: 0 4.5rem;
+            }
+        }
+    }
+
+    &__card {
+        @include breakpoints-down('tablet') {
+            img {
+                height: 250px;
+            }
+
+            &:nth-child(2) img {
+                height: 295px;
+            }
+        }
+
+        &-image {
+            margin-bottom: .85rem;
+            filter: drop-shadow(4px 4px 10px rgba($main-color, .35));
+
+
+
+            img {
+                border-radius: 2.5rem;
+
+
+            }
+        }
+    }
+
     &1 {
         margin-bottom: 3rem;
         display: flex;

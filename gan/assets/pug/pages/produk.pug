@@ -7,6 +7,12 @@ block content
     section.product 
         .container 
             h1.section-title MARI MENGENAL <br> PRODUK KAMI
+            .products 
+                each product, i in products
+                    .product__card 
+                        .product__card-image
+                            img(src=baseURL + "assets/img/produk/alif" + (i + 1) + ".png" alt="Minyak Goreng Alif")
+                        p.product__card-text= product
             .product1 
                 img(src= baseURL + "assets/img/produk/produk1.png" alt="Minyak Goreng Alif" loading="lazy").product1__img
                 table.product1__table
