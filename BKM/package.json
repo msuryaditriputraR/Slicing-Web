@@ -1,0 +1,15 @@
+{
+  "name": "bkm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "npx sass --watch assets/scss:assets/css",
+    "pug": "npx pug-cli -w -P -o ./ assets/pug/index.pug",
+    "pug-pages": "npx pug-cli -w -P -o ./pages/ assets/pug/pages/",
+    "start": "npx live-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
