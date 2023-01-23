@@ -1,0 +1,64 @@
+$header-height: 4rem;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font;
+    font-weight: map-get($font-weights, "regular");
+    font-size: var(--normal-font-size);
+    color: $text-color;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ==================== REUSABLE CLASS ===================== */
+
+
+/* ==================== SCROLL BAR ===================== */
+// ::-webkit-scrollbar {
+//     width: .8rem;
+//     border-radius: .5rem;
+//     background-color: $scroll-color;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     border-radius: .5rem;
+//     background-color: $scroll-thumb-color;
+
+//     &:hover {
+//         background-color: $scroll-thumb-hover-color;
+//     }
+// }
+
+/* ==================== ZOOM ===================== */
+@include breakpoints-up("2k") {
+    body {
+        zoom: 1.5;
+    }
+}
+
+@include breakpoints-up("4k") {
+    body {
+        zoom: 2.5;
+    }
+}
