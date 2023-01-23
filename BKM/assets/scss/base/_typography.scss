@@ -1,0 +1,58 @@
+/* ==================== FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+$main-font: 'Poppins',
+sans-serif;
+$second-font: 'DM Sans',
+sans-serif;
+
+// FONT SIZE
+:root {
+    --title-font-size: 2rem;
+    --subtitle-font-size: 1.5rem;
+    --normal-font-size: 1.185rem;
+    --navLink-font-size: 1.125rem;
+    --small-font-size: .785rem;
+    --smaller-font-size: .585rem;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --title-font-size: 2.5rem;
+        --subtitle-font-size: 2rem;
+        --normal-font-size: 1.315rem;
+        --navLink-font-size: 1.215rem;
+        --small-font-size: .985rem;
+        --smaller-font-size: .785rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    :root {
+        --title-font-size: 1.675rem;
+        --subtitle-font-size: 1.325rem;
+        --navLink-font-size: 1.15rem;
+        --normal-font-size: 1.015rem;
+        --small-font-size: .835rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --title-font-size: 1.475rem;
+        --navLink-font-size: 1.015rem;
+        --normal-font-size: .985rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        --title-font-size: 1.325rem;
+        --subtitle-font-size: 1.285rem;
+        --navLink-font-size: 1rem;
+        --normal-font-size: .925rem;
+    }
+}
+
+// FONT WEIGHT
+$font-weights: ("regular": 400, "medium": 500, "semi-bold": 600, "bold": 700);
