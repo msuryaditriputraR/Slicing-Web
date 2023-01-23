@@ -108,4 +108,29 @@ img {
   }
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+}
+.header .nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5rem;
+}
+.header .nav .nav__list {
+  display: flex;
+  column-gap: 2rem;
+  font-size: var(--navLink-font-size);
+}
+.header .nav .nav__link {
+  color: hsl(0deg, 0%, 75%);
+  transition: 0.3s;
+}
+.header .nav .nav__link:hover {
+  color: hsl(247deg, 74%, 64%);
+}
+
 /*# sourceMappingURL=main.css.map */
