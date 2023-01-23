@@ -1,0 +1,33 @@
+$header-height: 5.5rem;
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: map-get($map: $z-indexes, $key: "fixed");
+    width: 100vw;
+
+    .nav {
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: $header-height;
+        }
+
+        .nav__list {
+            display: flex;
+            column-gap: 2rem;
+            font-size: var(--navLink-font-size);
+        }
+
+        .nav__link {
+            color: $gray-color;
+            transition: .3s;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

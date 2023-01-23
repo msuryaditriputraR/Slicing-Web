@@ -1,4 +1,4 @@
-header#header 
+header#header.header
     nav.nav 
         .container 
             a.nav__logo(href="/" aria-label="BKM") 
@@ -7,4 +7,4 @@ header#header
                 ul.nav__list 
                     each nl in navLinks
                         li.nav__item 
-                            a.nav__link= nl
+                            a(href=baseURL + "pages/" + nl.link).nav__link= nl.text
