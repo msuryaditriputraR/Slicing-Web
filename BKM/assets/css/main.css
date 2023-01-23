@@ -88,5 +88,24 @@ img {
     zoom: 2.5;
   }
 }
+.container {
+  max-width: 1148px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-inline: 2.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    margin-inline: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
