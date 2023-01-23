@@ -1,0 +1,36 @@
+include ../data/data.pug
+
+doctype html
+html(lang='en')
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        block title
+        title= title
+
+        //  ========================= ICONS ========================== 
+        link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet')
+
+
+        //  ========================= MAIN CSS ========================== 
+        link(rel="stylesheet" href=baseURL + "assets/css/main.css")
+
+    body
+        //  ========================= HEADER ========================== 
+        include header.pug
+
+        //  ========================= MAIN ========================== 
+        main 
+            block content
+
+        //  ========================= FOOTER ========================== 
+        include footer.pug
+
+        //- //  ========================= SCROLL UP ========================== 
+        //- include ../component/scrollup.pug
+
+
+        //  ========================= MAIN JS ========================== 
+        script(src= baseURL + "assets/js/main.js") 
