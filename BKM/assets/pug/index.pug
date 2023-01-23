@@ -4,3 +4,16 @@ block title
     - var title = "PT BAHTERA Karunia Mandiri"
 
 block content
+    //  ========================= HOME ========================== 
+    section.home 
+        .container 
+            .home__info 
+                h1.home__title Jasa Kepabeanan <br> Terpercaya
+                p.home__desc Percayakan kepabeanan pengiriman expor & impor bisnis anda pada kami, PT. Bahtera Karunia Mandiri
+
+                form(action="").home__form
+                    label(for="#home-input") Lacak Kiriman
+                    .home__track
+                        input.home__input(placeholder="01234****") 
+                        button.home__btn(type="submit") Tracking
+
