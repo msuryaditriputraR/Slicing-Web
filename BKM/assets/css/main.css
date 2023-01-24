@@ -130,12 +130,13 @@ input[type=number] {
   top: 0;
   z-index: 100;
   width: 100vw;
+  background-color: hsl(220deg, 100%, 98%);
 }
 .header .nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5.5rem;
+  height: 5rem;
 }
 .header .nav .nav__list {
   display: flex;
@@ -151,7 +152,7 @@ input[type=number] {
 }
 
 main {
-  margin-top: 5.5rem;
+  margin-top: 5rem;
 }
 
 .home .container {

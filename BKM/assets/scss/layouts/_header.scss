@@ -1,10 +1,11 @@
-$header-height: 5.5rem;
+$header-height: 5rem;
 
 .header {
     position: fixed;
     top: 0;
     z-index: map-get($map: $z-indexes, $key: "fixed");
     width: 100vw;
+    background-color: $body-color;
 
     .nav {
 
