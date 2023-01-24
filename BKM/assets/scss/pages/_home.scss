@@ -134,3 +134,39 @@
 }
 
 /* ==================== HOME ABOUT ===================== */
+.home-about {
+    background-color: hsl(207, 100%, 89%);
+    padding-block: 4.5rem 3.5rem;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__image {
+        max-width: 450px;
+    }
+
+    &__info {
+        text-align: right;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: var(--subtitle-font-size);
+    }
+
+    &__desc {
+        width: 46ch;
+        margin-block: 1.5rem 2.5rem;
+        line-height: 1.85;
+    }
+
+    &__btn {
+        background-color: hsl(209, 100%, 65%);
+        color: $white-color;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        box-shadow: 0px 15px 40px rgba($color: #7090B0, $alpha: .15);
+    }
+}

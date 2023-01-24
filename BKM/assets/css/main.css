@@ -12,7 +12,7 @@
 @media screen and (min-width: 1024px) {
   :root {
     --title-font-size: 2.85rem;
-    --subtitle-font-size: 2rem;
+    --subtitle-font-size: 2.25rem;
     --normal-font-size: 1.215rem;
     --navLink-font-size: 1.215rem;
     --small-font-size: .985rem;
@@ -136,7 +136,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 4.5rem;
 }
 .header .nav .nav__list {
   display: flex;
@@ -152,7 +152,7 @@ input[type=number] {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 4.5rem;
 }
 
 /* ==================== HOME ===================== */
@@ -269,5 +269,35 @@ main {
 }
 
 /* ==================== HOME ABOUT ===================== */
+.home-about {
+  background-color: hsl(207deg, 100%, 89%);
+  padding-block: 4.5rem 3.5rem;
+}
+.home-about .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home-about__image {
+  max-width: 450px;
+}
+.home-about__info {
+  text-align: right;
+  align-self: center;
+}
+.home-about__title {
+  font-size: var(--subtitle-font-size);
+}
+.home-about__desc {
+  width: 46ch;
+  margin-block: 1.5rem 2.5rem;
+  line-height: 1.85;
+}
+.home-about__btn {
+  background-color: hsl(209deg, 100%, 65%);
+  color: hsl(0deg, 0%, 98%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.15);
+}
 
 /*# sourceMappingURL=main.css.map */
