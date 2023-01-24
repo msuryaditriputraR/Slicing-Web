@@ -26,9 +26,9 @@ block content
                 span.service__subtitle Layanan untuk Anda
                 h2.service__title Kami menawarkan <br> Layanan terbaik
             .service__cards 
-                article.service__card 
-                    each service, i in services
-                        .service__card-icon 
+                each service, i in services
+                    article.service__card 
+                        .service__card-icon(class="border--" + service.color)
                             img(src="/assets/img/icons/icon__service" + (i +1) + ".svg" alt="" aria-hidden="true")
                         div 
                             h3.service__card-title= service.title
