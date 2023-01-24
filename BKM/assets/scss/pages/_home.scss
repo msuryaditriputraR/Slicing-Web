@@ -84,3 +84,49 @@
         }
     }
 }
+
+.service {
+    padding-block: 4.5rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        color: $main-color;
+        font-weight: map-get($map: $font-weights, $key: "medium");
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    &__card {
+        display: flex;
+        column-gap: 1.5rem;
+
+        &-icon {
+            @include box(45px, 45px, .5rem);
+            border-width: 2px;
+            border-style: solid;
+            margin-top: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60%;
+            }
+        }
+
+        &-desc {
+            margin-top: .5rem;
+            width: 25ch;
+            color: hsl(0, 0%, 48%);
+        }
+    }
+}

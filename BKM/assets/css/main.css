@@ -89,17 +89,22 @@ input[type=number] {
 
 /* ==================== REUSABLE CLASS ===================== */
 /* ==================== SCROLL BAR ===================== */
-/* ==================== ZOOM ===================== */
-@media screen and (min-width: 2048px) {
-  body {
-    zoom: 1.5;
-  }
+.border--red {
+  border-color: hsl(3deg, 73%, 59%);
 }
-@media screen and (min-width: 3096px) {
-  body {
-    zoom: 2.5;
-  }
+
+.border--yellow {
+  border-color: hsl(37deg, 99%, 61%);
 }
+
+.border--green {
+  border-color: hsl(120deg, 75%, 40%);
+}
+
+.border--blue {
+  border-color: hsl(227deg, 80%, 55%);
+}
+
 .container {
   max-width: 1148px;
   margin-inline: auto;
@@ -217,6 +222,47 @@ main {
 .home__image img {
   border-radius: 0.85rem;
   box-shadow: 0px 10px 30px rgba(112, 144, 176, 0.15);
+}
+
+.service {
+  padding-block: 4.5rem;
+}
+.service .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service__subtitle {
+  color: hsl(247deg, 74%, 64%);
+  font-weight: 500;
+}
+.service__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+.service__card {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.service__card-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service__card-icon img {
+  width: 60%;
+}
+.service__card-desc {
+  margin-top: 0.5rem;
+  width: 25ch;
+  color: hsl(0deg, 0%, 48%);
 }
 
 /*# sourceMappingURL=main.css.map */
