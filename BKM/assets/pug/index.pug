@@ -8,14 +8,14 @@ block content
     section.home 
         .container 
             .home__info 
-                h1.home__title Jasa Kepabeanan <br> Terpercaya
+                h1.home__title Ja<span>sa</span> Kepabeanan <br> Terpercaya
                 p.home__desc Percayakan kepabeanan pengiriman expor & impor bisnis anda pada kami, PT. Bahtera Karunia Mandiri
 
                 form(action="").home__form
-                    label(for="#home-input") Lacak Kiriman
-                    .home__track
-                        input.home__input(placeholder="01234****") 
-                        button.home__btn(type="submit") Tracking
+                    label(for="#home-input").home__form-label Lacak Kiriman
+                    .home__form-track
+                        input.home__form-input(placeholder="01234****" type="number") 
+                        button.home__form-btn(type="submit") Tracking
             .home__image 
                 img(src=baseURL + "assets/img/banner1.png" alt="")
 
