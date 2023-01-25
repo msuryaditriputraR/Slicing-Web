@@ -528,4 +528,39 @@ main {
   box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.15);
 }
 
+/* ==================== LOCATION ===================== */
+.location {
+  padding-block: 4.5rem;
+}
+.location .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.location__title {
+  margin-bottom: 2.5rem;
+}
+.location__info-title {
+  margin-bottom: 1.5rem;
+}
+.location__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  column-gap: 0.5rem;
+  text-align: center;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+.location__map {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(112, 144, 176, 0.15);
+  margin-bottom: 2.5rem;
+}
+.location__map iframe {
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */

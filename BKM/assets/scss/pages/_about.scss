@@ -61,3 +61,44 @@
         box-shadow: 0px 15px 40px rgba($color: #7090B0, $alpha: .15);
     }
 }
+
+/* ==================== LOCATION ===================== */
+.location {
+    padding-block: 4.5rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 2.5rem;
+    }
+
+    &__info-title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: .5rem;
+        column-gap: .5rem;
+        text-align: center;
+        max-width: fit-content;
+        margin-inline: auto;
+    }
+
+    &__map {
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: 0px 10px 20px rgba($color: #7090B0, $alpha: .15);
+        margin-bottom: 2.5rem;
+
+        iframe {
+            display: block;
+        }
+    }
+}
