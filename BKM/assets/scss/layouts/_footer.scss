@@ -1,0 +1,38 @@
+.footer {
+    background-color: hsl(227, 17%, 16%);
+    padding-block: 4.5rem 5.5rem;
+    color: $white-color;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copy {
+        font-size: var(--smaller-font-size);
+        line-height: 2;
+    }
+
+    &__menus {
+        display: grid;
+        grid-template-columns: repeat(3, fit-content(100%));
+        column-gap: 3.5rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__item,
+    &__link {
+        color: hsl(240, 1%, 64%);
+        font-size: var(--small-font-size);
+        margin-bottom: .5rem;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+
+
+}

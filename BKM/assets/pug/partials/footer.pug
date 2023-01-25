@@ -5,7 +5,8 @@ footer.footer
             p.footer__copy Copyright © 2022. <br> All Rights Reserved.
         .footer__menus 
             each fm in footerMenus
-                p.footer__menu-title= fm.title
+                div 
+                    p.footer__title= fm.title
                     ul.footer__menu  
                         each m in fm.menus 
                             li.footer__item 

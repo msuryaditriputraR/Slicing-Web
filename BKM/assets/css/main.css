@@ -155,6 +155,36 @@ main {
   margin-top: 4.5rem;
 }
 
+.footer {
+  background-color: hsl(227deg, 17%, 16%);
+  padding-block: 4.5rem 5.5rem;
+  color: hsl(0deg, 0%, 98%);
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  line-height: 2;
+}
+.footer__menus {
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(100%));
+  column-gap: 3.5rem;
+}
+.footer__title {
+  margin-bottom: 1rem;
+}
+.footer__item, .footer__link {
+  color: hsl(240deg, 1%, 64%);
+  font-size: var(--small-font-size);
+  margin-bottom: 0.5rem;
+}
+.footer__item:hover, .footer__link:hover {
+  color: hsl(0deg, 0%, 98%);
+}
+
 /* ==================== HOME ===================== */
 .home .container {
   display: flex;
