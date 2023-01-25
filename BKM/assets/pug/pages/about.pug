@@ -37,3 +37,12 @@ block content
                             i(class="bx " + contact.icon, aria-hidden="true")
                             =contact.text
 
+    //  ========================= OFFICE ========================== 
+    section.office 
+        .container
+            h2.office__title Kantor Kami 
+            .office__cards
+                - var i = 1;
+                while i <= 6
+                    img(src=baseURL + "/assets/img/office/office" + i + ".png" alt="Kantor " +  i class="office__img" draggable="false")
+                    - i++;
