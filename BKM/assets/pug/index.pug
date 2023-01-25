@@ -63,14 +63,14 @@ block content
                                 a(href="#" aria-label="email") 
                                     i.bx.bxs-envelope
 
-    //  ========================= CLIENT ========================== 
-    section.client 
+    //  ========================= CLIENTS ========================== 
+    section.clients 
         .container 
-            h2.client__title Klient & Mitra kami
-            .client__cards 
+            h2.clients__title Klient & Mitra kami
+            .clients__cards 
                 each client in clients 
-                    article.client__card 
-                        .client__card-image
+                    article.clients__card 
+                        .clients__card-image
                             img(src=baseURL + "/assets/img/clients/" + client.name + ".png", alt=client.name)
-                        h3.client__card-name= client.name
-                        p.client__card-location= client.location
+                        h3.clients__card-name= client.name
+                        p.clients__card-location= client.location
