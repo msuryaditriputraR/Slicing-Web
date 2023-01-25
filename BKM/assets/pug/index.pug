@@ -62,3 +62,15 @@ block content
                             .teams__card-icon 
                                 a(href="#" aria-label="email") 
                                     i.bx.bxs-envelope
+
+    //  ========================= CLIENT ========================== 
+    section.client 
+        .container 
+            h2.client__title Klient & Mitra kami
+            .client__cards 
+                each client in clients 
+                    article.client__card 
+                        .client__card-image
+                            img(src=baseURL + "/assets/img/clients/" + client.name + ".png", alt=client.name)
+                        h3.client__card-name= client.name
+                        p.client__card-location= client.location
