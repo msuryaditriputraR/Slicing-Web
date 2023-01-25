@@ -1,0 +1,27 @@
+.about {
+    padding-block: 2.5rem 5.5rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__image {
+        max-width: 500px;
+    }
+
+    &__info {
+        text-align: right;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: var(--subtitle-font-size);
+    }
+
+    &__desc {
+        width: 46ch;
+        margin-block: 1.5rem;
+        line-height: 1.65;
+    }
+}

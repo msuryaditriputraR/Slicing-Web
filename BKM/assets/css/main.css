@@ -473,4 +473,27 @@ main {
   display: block;
 }
 
+.about {
+  padding-block: 2.5rem 5.5rem;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__image {
+  max-width: 500px;
+}
+.about__info {
+  text-align: right;
+  align-self: center;
+}
+.about__title {
+  font-size: var(--subtitle-font-size);
+}
+.about__desc {
+  width: 46ch;
+  margin-block: 1.5rem;
+  line-height: 1.65;
+}
+
 /*# sourceMappingURL=main.css.map */
