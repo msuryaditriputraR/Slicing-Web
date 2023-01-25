@@ -12,6 +12,8 @@ block content
                 h1.about__title  PT. Bahtera Karunia Mandiri
                 p.about__desc Kami adalah perusahaaan berbasis Pengusaha Pengurusan Jasa Kepabeanan (PPJK) yang merupakan badan usaha yang melakukan kegiatan pengurusan kewajiban pabean untuk dan atas kegiatan Importir atau Eksportir dan telah terdaftar secara resmi dalam Direktorat Jenderal Bea dan Cukai (DJBC).
                 p.about__desc PT. Bahtera Karunia Mandiri didirikan pada tahun 2011 berdasarkan akte pendirian tanggal 7 Desember 2011 dan perubahan akte pada tanggal 3 Mei 2012.
+
+    //  ========================= DOCUMENTATION ========================== 
     section.documentation 
         .container
             h2.documentation__title Dokumentasi 
@@ -20,4 +22,18 @@ block content
             while i <= 6
                 img(src=baseURL + "/assets/img/office/office" + i + ".png" alt="Dokumentasi " +  i class="documentation__img" draggable="false")
                 - i++;
+
+    //  ========================= LOCATION ========================== 
+    section.location 
+        .container 
+            h2.location__title Lokasi Kami
+            .location__map
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4420.786032672869!2d119.4079726711937!3d-5.120941080271137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02996b9bc067%3A0xf338a5baf3bb1a23!2sJl.%20Sapuli%20No.8d%2C%20Mampu%2C%20Kec.%20Wajo%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090164!5e0!3m2!1sid!2sid!4v1674625211324!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+            .location__info
+                h3.location__info-title PT Bahtera Karunia Mandiri 
+                ul.location__list 
+                    each contact in contacts 
+                        li.location__item
+                            i(class="bx " + contact.icon, aria-hidden="true")
+                            =contact.text
 
