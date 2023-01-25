@@ -300,4 +300,66 @@ main {
   box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.15);
 }
 
+/* ==================== TEAMS ===================== */
+.teams {
+  padding-block: 6.5rem;
+}
+.teams__title {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.teams__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}
+.teams__card {
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.15);
+  padding-top: 2.5rem;
+}
+.teams__card-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: hsl(247deg, 74%, 64%);
+  margin-inline: auto;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.teams__card-avatar img {
+  transform: scale(1.2) translateY(10%);
+}
+.teams__card-name {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.teams__card-job {
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 75%);
+  letter-spacing: 2px;
+  font-size: var(--small-font-size);
+}
+.teams__card-icons {
+  display: flex;
+  margin-top: 2.5rem;
+  border-top: 2px solid hsl(200deg, 21%, 89%);
+}
+.teams__card-icon {
+  flex: 50%;
+  padding-block: 1rem;
+}
+.teams__card-icon a {
+  color: hsl(247deg, 74%, 64%);
+}
+.teams__card-icon:first-child {
+  border-right: 2px solid hsl(200deg, 21%, 89%);
+}
+.teams__card:nth-child(5) img {
+  transform: translateY(10%) translateX(5%);
+}
+
 /*# sourceMappingURL=main.css.map */
