@@ -18,6 +18,16 @@ block content
                             else 
                                 span=ti.right
             //  ========================= TRACKING DETAIL ========================== 
-
+            .tracking__detail 
+                h2.tracking__detail-title Details
+                ul.tracking__detail-list 
+                    each td in trackDetails
+                        if td.isActive  
+                            li.tracking__detail-item.active
+                        else 
+                            li.tracking__detail-item
+                                =td.left 
+                                span 
+                                =td.right
 
 
