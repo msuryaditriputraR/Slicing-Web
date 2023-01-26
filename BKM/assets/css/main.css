@@ -165,7 +165,7 @@ main {
     row-gap: 2.5rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .footer .container > div:first-child {
     width: 100%;
     display: flex;
@@ -182,7 +182,7 @@ main {
   grid-template-columns: repeat(3, fit-content(100%));
   column-gap: 3.5rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .footer__menus {
     grid-template-columns: repeat(2, fit-content(100%));
     row-gap: 3.5rem;
@@ -217,7 +217,7 @@ main {
     zoom: 1.25;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .home__info {
     zoom: 1;
   }
@@ -274,7 +274,7 @@ main {
   column-gap: 1rem;
   align-items: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .home__form-track {
     flex-direction: column;
     row-gap: 1rem;
@@ -298,7 +298,7 @@ main {
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .home__form-input, .home__form-btn {
     width: 100%;
   }
@@ -364,7 +364,7 @@ main {
     zoom: 1.35;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .service__cards {
     zoom: 1;
   }
@@ -434,7 +434,7 @@ main {
 .home-about__title {
   font-size: var(--subtitle-font-size);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .home-about__title {
     width: 13ch;
     margin-inline: auto;
@@ -445,7 +445,7 @@ main {
   margin-block: 1.5rem 2.5rem;
   line-height: 1.85;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .home-about__desc {
     width: initial;
   }
@@ -478,7 +478,7 @@ main {
     gap: 1.5rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .teams__cards {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
@@ -571,7 +571,7 @@ main {
   width: 0;
   height: 0;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .clients__cards {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-auto-columns: minmax(230px, 1fr);
@@ -585,7 +585,7 @@ main {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .clients__card {
     padding: 1rem;
   }
@@ -612,7 +612,7 @@ main {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .clients__card-name {
     font-size: 0.925rem;
   }
@@ -646,7 +646,7 @@ main {
 .contact__title {
   margin-bottom: 2.5rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .contact__title {
     width: 13ch;
     margin-inline: auto;
@@ -664,7 +664,7 @@ main {
     margin-inline: auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .contact__item {
     font-size: var(--small-font-size);
   }
@@ -680,7 +680,7 @@ main {
 .contact__map iframe {
   display: block;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .contact__map iframe {
     width: 250px;
     height: 250px;
@@ -721,7 +721,7 @@ main {
 .about__title {
   font-size: var(--subtitle-font-size);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .about__title {
     width: 13ch;
     margin-inline: auto;
@@ -765,7 +765,7 @@ main {
   width: 0;
   height: 0;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .documentation__cards {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-auto-columns: minmax(230px, 1fr);
@@ -803,7 +803,7 @@ main {
   max-width: fit-content;
   margin-inline: auto;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .location__item {
     font-size: var(--small-font-size);
   }
@@ -826,7 +826,7 @@ main {
     height: 325px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .location__map iframe {
     width: 250px;
     height: 250px;
@@ -853,7 +853,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .office__cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -890,7 +890,7 @@ main {
     width: 80vw;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .tracking__info {
     width: 100%;
     padding: 1rem;
@@ -911,7 +911,7 @@ main {
   color: hsl(0deg, 0%, 25%);
   font-weight: 600;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .tracking__info-item {
     flex-direction: column;
     justify-content: center;
@@ -1009,7 +1009,7 @@ main {
     height: 4rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .tracking__detail {
     margin-top: 2.5rem;
   }
