@@ -10,6 +10,12 @@
         padding: 1.5rem 2.5rem;
         border-radius: .85rem;
 
+        @include breakpoints-down("tablet") {
+            & {
+                width: 65vw;
+            }
+        }
+
         &-title {
             font-size: calc(var(--normal-font-size) + .25rem);
             margin-bottom: 2.25rem;
@@ -87,6 +93,22 @@
                     background-color: $green-color;
                 }
             }
+        }
+
+        @include breakpoints-down("tablet") {
+            & {
+                padding-inline: 1.5rem;
+
+                &-item {
+                    font-size: calc(var(--small-font-size) + .05rem);
+
+                    .break {
+                        padding-inline: .5rem;
+                    }
+                }
+            }
+
+
         }
     }
 }

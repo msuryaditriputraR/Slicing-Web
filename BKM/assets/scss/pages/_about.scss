@@ -14,11 +14,25 @@
                 max-width: 400px;
             }
         }
+
+        @include breakpoints-down("tablet") {
+            & {
+                display: none;
+            }
+        }
     }
 
     &__info {
         text-align: right;
         align-self: center;
+
+        @include breakpoints-down("tablet") {
+            & {
+                text-align: center;
+                width: fit-content;
+                margin-inline: auto;
+            }
+        }
     }
 
     &__title {
