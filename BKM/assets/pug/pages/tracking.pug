@@ -1,0 +1,20 @@
+extends ../partials/layout.pug
+
+block title 
+    - var title = "Tracking"
+
+block content 
+    section.tracking
+        .container 
+            .tracking__info 
+                h1.tracking__info-title Informasi Pengiriman
+                ul.tracking__info-list 
+                    each ti, i in trackInfo
+                        li.tracking__info-item 
+                            =ti.left
+                            if i == trackInfo.length - 1    
+                                span.text--green=ti.right
+                            else 
+                                span=ti.right
+
+
