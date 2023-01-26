@@ -1,0 +1,25 @@
+.scrollup {
+    position: fixed;
+    z-index: map-get($map: $z-indexes, $key: "fixed");
+    right: 2.5rem;
+    bottom: -100%;
+    width: 35px;
+    height: 35px;
+    border-radius: .25rem;
+    background-color: $main-color;
+    color: $white-color;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    box-shadow: 0px 15px 40px rgba($color: #7090B0, $alpha: .15);
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+
+    &.active-scrollup {
+        bottom: 2.5rem;
+    }
+}
