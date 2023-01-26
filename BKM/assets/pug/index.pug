@@ -17,7 +17,7 @@ block content
                         input.home__form-input(placeholder="01234****" type="number") 
                         button.home__form-btn(type="submit") Tracking
             .home__image 
-                img(src=baseURL + "assets/img/banner1.png" alt="")
+                img(src=baseURL + "assets/img/banner1.png" alt="" loading="lazy")
 
     //  ========================= SERVICE ========================== 
     section.service 
@@ -38,7 +38,7 @@ block content
     section.home-about 
         .container 
             .home-about__image 
-                img(src=baseURL + "assets/img/banner2.png" alt="")
+                img(src=baseURL + "assets/img/banner2.png" alt="" loading="lazy")
             .home-about__info 
                 h2.home-about__title  PT. Bahtera Karunia Mandiri
                 p.home-about__desc Kami adalah perusahaaan berbasis Pengusaha Pengurusan Jasa Kepabeanan (PPJK) yang merupakan badan usaha yang melakukan kegiatan pengurusan kewajiban pabean untuk dan atas kegiatan Importir atau Eksportir dan telah terdaftar secara resmi dalam Direktorat Jenderal Bea dan Cukai (DJBC).
@@ -52,7 +52,7 @@ block content
                 each team in teams
                     article.teams__card
                         .teams__card-avatar     
-                            img(src=baseURL + "assets/img/teams/" + team.name + ".png", alt=team.name)
+                            img(src=baseURL + "assets/img/teams/" + team.name + ".png", alt=team.name loading="lazy")
                         h3.teams__card-name= team.name 
                         p.teams__card-job= team.job
                         .teams__card-icons 
@@ -71,7 +71,7 @@ block content
             each client in clients 
                 article.clients__card 
                     .clients__card-image
-                        img(src=baseURL + "/assets/img/clients/" + client.name + ".png", alt=client.name)
+                        img(src=baseURL + "/assets/img/clients/" + client.name + ".png", alt=client.name loading="lazy")
                     h3.clients__card-name= client.name
                     p.clients__card-location= client.location
 
