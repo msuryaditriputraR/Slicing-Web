@@ -3,8 +3,8 @@
 :root {
   --title-font-size: 2rem;
   --subtitle-font-size: 1.5rem;
-  --normal-font-size: 1.185rem;
-  --navLink-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --navLink-font-size: 1.085rem;
   --small-font-size: .785rem;
   --smaller-font-size: .585rem;
 }
@@ -115,11 +115,6 @@ input[type=number] {
 }
 @media screen and (max-width: 1024px) {
   .container {
-    margin-inline: 2.5rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .container {
     margin-inline: 1.5rem;
   }
 }
@@ -219,6 +214,12 @@ main {
   border: 5px solid hsl(247deg, 74%, 64%);
   border-bottom: none;
 }
+@media screen and (max-width: 1024px) {
+  .home .home__title span::after {
+    width: 30px;
+    height: 15px;
+  }
+}
 .home .home__desc {
   width: 32ch;
   line-height: 1.6;
@@ -269,6 +270,14 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .service .container {
+    flex-direction: column;
+    row-gap: 4.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+  }
+}
 .service__subtitle {
   color: hsl(247deg, 74%, 64%);
   font-weight: 500;
@@ -281,6 +290,7 @@ main {
 .service__card {
   display: flex;
   column-gap: 1.5rem;
+  text-align: left;
 }
 .service__card-icon {
   width: 45px;
@@ -313,6 +323,11 @@ main {
 }
 .home-about__image {
   max-width: 450px;
+}
+@media screen and (max-width: 1024px) {
+  .home-about__image {
+    max-width: 400px;
+  }
 }
 .home-about__info {
   text-align: right;
@@ -486,6 +501,11 @@ main {
 }
 .about__image {
   max-width: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .about__image {
+    max-width: 400px;
+  }
 }
 .about__info {
   text-align: right;

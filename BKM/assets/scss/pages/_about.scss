@@ -8,6 +8,12 @@
 
     &__image {
         max-width: 500px;
+
+        @include breakpoints-down("large") {
+            & {
+                max-width: 400px;
+            }
+        }
     }
 
     &__info {
