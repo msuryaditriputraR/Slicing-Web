@@ -7,7 +7,7 @@
         height: 85vh;
     }
 
-    .home__info {
+    &__info {
         padding-left: 2.5rem;
 
         @include breakpoints-down('medium') {
@@ -19,7 +19,7 @@
         }
     }
 
-    .home__title {
+    &__title {
         font-size: var(--title-font-size);
         margin-bottom: 1rem;
 
@@ -53,13 +53,13 @@
         }
     }
 
-    .home__desc {
+    &__desc {
         width: 32ch;
         line-height: 1.6;
         margin-bottom: 2rem;
     }
 
-    .home__form {
+    &__form {
         &-label {
             font-weight: map-get($map: $font-weights, $key: "semi-bold");
             display: inline-block;
