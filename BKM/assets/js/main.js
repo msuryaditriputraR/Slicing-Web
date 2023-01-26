@@ -48,3 +48,14 @@ function dragToScroll(elemID) {
 
 dragToScroll("clients-cards");
 dragToScroll("documentation-cards");
+
+/*=============== SHOW SCROLL UP ===============*/
+function showScrollup(idScrollUp) {
+    const scrollUp = document.getElementById(idScrollUp);
+
+    scrollUp.classList[this.scrollY >= 130 ? "add" : "remove"](
+        "active-scrollup"
+    );
+}
+
+window.addEventListener("scroll", () => showScrollup("scroll-up"));
