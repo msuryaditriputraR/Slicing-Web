@@ -724,6 +724,11 @@ main {
   padding: 1.5rem 2.5rem;
   border-radius: 0.85rem;
 }
+@media screen and (max-width: 1024px) {
+  .tracking__info {
+    width: 55vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .tracking__info {
     width: 65vw;
