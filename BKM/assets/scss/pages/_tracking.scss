@@ -26,6 +26,13 @@
             }
         }
 
+        @include breakpoints-down("small") {
+            & {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
         &-title {
             font-size: calc(var(--normal-font-size) + .25rem);
             margin-bottom: 2.25rem;
@@ -41,6 +48,16 @@
                 margin-left: auto;
                 color: $text-color;
                 font-weight: map-get($map: $font-weights, $key: "semi-bold");
+            }
+
+            @include breakpoints-down("small") {
+                flex-direction: column;
+                justify-content: center;
+                font-size: calc(var(--normal-font-size) + .15rem);
+
+                span {
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -86,7 +103,7 @@
                 }
             }
 
-            &:not(:last-child) span:after {
+            &:not(:last-child) .break span:after {
                 content: "";
                 position: absolute;
                 top: 50%;
@@ -99,8 +116,20 @@
             &.active {
                 color: $text-color !important;
 
-                span {
+                .break span {
                     background-color: $green-color;
+                }
+            }
+        }
+
+        @include breakpoints-down("large") {
+            &-item {
+                .break {
+                    padding-bottom: 2.5rem;
+                }
+
+                &:not(:last-child) .break span:after {
+                    height: 4rem;
                 }
             }
         }
@@ -114,6 +143,7 @@
 
                     .break {
                         padding-inline: .5rem;
+                        padding-bottom: 1.5rem;
                     }
                 }
             }
@@ -128,8 +158,34 @@
                     padding-bottom: 2.5rem;
                 }
 
-                &:not(:last-child) span:after {
+                &:not(:last-child) .break span:after {
                     height: 4rem;
+                }
+            }
+        }
+
+        @include breakpoints-down("small") {
+            & {
+                margin-top: 2.5rem;
+
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    padding-left: 1.5rem;
+                    margin-bottom: 1rem;
+
+                    .break {
+                        position: absolute;
+                        order: -1;
+                        padding: 0;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &:not(:last-child) .break span:after {
+                        height: 6.5rem;
+                    }
                 }
             }
         }

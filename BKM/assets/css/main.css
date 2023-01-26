@@ -5,7 +5,7 @@
   --subtitle-font-size: 1.5rem;
   --normal-font-size: 1rem;
   --small-font-size: .785rem;
-  --smaller-font-size: .585rem;
+  --smaller-font-size: .725rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -28,8 +28,8 @@
 @media screen and (max-width: 400px) {
   :root {
     --title-font-size: 1.475rem;
-    --navLink-font-size: 1.015rem;
-    --normal-font-size: .985rem;
+    --normal-font-size: .885rem;
+    --small-font-size: .785rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -165,6 +165,14 @@ main {
     row-gap: 2.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .footer .container > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .footer__copy {
   font-size: var(--smaller-font-size);
   line-height: 2;
@@ -173,6 +181,12 @@ main {
   display: grid;
   grid-template-columns: repeat(3, fit-content(100%));
   column-gap: 3.5rem;
+}
+@media screen and (max-width: 375px) {
+  .footer__menus {
+    grid-template-columns: repeat(2, fit-content(100%));
+    row-gap: 3.5rem;
+  }
 }
 .footer__title {
   margin-bottom: 1rem;
@@ -193,24 +207,29 @@ main {
   justify-content: space-between;
   height: 85vh;
 }
-.home .home__info {
+.home__info {
   padding-left: 2.5rem;
 }
 @media screen and (max-width: 568px) {
-  .home .home__info {
+  .home__info {
     padding-left: 0;
     margin-inline: auto;
     zoom: 1.25;
   }
 }
-.home .home__title {
+@media screen and (max-width: 375px) {
+  .home__info {
+    zoom: 1;
+  }
+}
+.home__title {
   font-size: var(--title-font-size);
   margin-bottom: 1rem;
 }
-.home .home__title span {
+.home__title span {
   position: relative;
 }
-.home .home__title span::after {
+.home__title span::after {
   width: 40px;
   height: 20px;
   content: "";
@@ -224,38 +243,49 @@ main {
   border-bottom: none;
 }
 @media screen and (max-width: 1024px) {
-  .home .home__title span::after {
+  .home__title span::after {
     width: 30px;
     height: 15px;
   }
 }
 @media screen and (max-width: 568px) {
-  .home .home__title span::after {
+  .home__title span::after {
     width: 20px;
     height: 10px;
   }
 }
-.home .home__desc {
+.home__desc {
   width: 32ch;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
-.home .home__form-label {
+@media screen and (max-width: 320px) {
+  .home__desc {
+    width: initial;
+  }
+}
+.home__form-label {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 0.5rem;
 }
-.home .home__form-track {
+.home__form-track {
   display: flex;
   column-gap: 1rem;
   align-items: center;
 }
-.home .home__form-input {
+@media screen and (max-width: 375px) {
+  .home__form-track {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+.home__form-input {
   border: 1px solid hsl(233deg, 19%, 82%);
   color: hsl(0deg, 0%, 25%);
   box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.15);
 }
-.home .home__form-btn {
+.home__form-btn {
   background-color: hsl(247deg, 74%, 64%);
   color: hsl(0deg, 0%, 98%);
   border: none;
@@ -263,10 +293,15 @@ main {
   letter-spacing: 0.85px;
   cursor: pointer;
 }
-.home .home__form-input, .home .home__form-btn {
+.home__form-input, .home__form-btn {
   outline: none;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
+}
+@media screen and (max-width: 375px) {
+  .home__form-input, .home__form-btn {
+    width: 100%;
+  }
 }
 .home__image {
   max-width: 450px;
@@ -324,7 +359,14 @@ main {
 }
 @media screen and (max-width: 568px) {
   .service__cards {
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+    zoom: 1.35;
+  }
+}
+@media screen and (max-width: 375px) {
+  .service__cards {
+    zoom: 1;
   }
 }
 .service__card {
@@ -392,10 +434,21 @@ main {
 .home-about__title {
   font-size: var(--subtitle-font-size);
 }
+@media screen and (max-width: 375px) {
+  .home-about__title {
+    width: 13ch;
+    margin-inline: auto;
+  }
+}
 .home-about__desc {
   width: 46ch;
   margin-block: 1.5rem 2.5rem;
   line-height: 1.85;
+}
+@media screen and (max-width: 375px) {
+  .home-about__desc {
+    width: initial;
+  }
 }
 .home-about__btn {
   background-color: hsl(209deg, 100%, 65%);
@@ -423,6 +476,12 @@ main {
   .teams__cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .teams__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
 }
 .teams__card {
@@ -512,16 +571,34 @@ main {
   width: 0;
   height: 0;
 }
+@media screen and (max-width: 375px) {
+  .clients__cards {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-auto-columns: minmax(230px, 1fr);
+    column-gap: 1rem;
+    padding-left: 1rem;
+  }
+}
 .clients__card {
   text-align: center;
   box-shadow: 0px 10px 20px rgba(112, 144, 176, 0.15);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
+@media screen and (max-width: 375px) {
+  .clients__card {
+    padding: 1rem;
+  }
+}
 .clients__card-image img {
   display: block;
   margin-inline: auto;
   height: 120px;
+}
+@media screen and (max-width: 768px) {
+  .clients__card-image img {
+    height: 80px;
+  }
 }
 .clients__card-name {
   margin-top: 1.5rem;
@@ -529,6 +606,16 @@ main {
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
   font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .clients__card-name {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .clients__card-name {
+    font-size: 0.925rem;
+  }
 }
 .clients__card-location {
   color: hsl(0deg, 0%, 75%);
@@ -559,6 +646,12 @@ main {
 .contact__title {
   margin-bottom: 2.5rem;
 }
+@media screen and (max-width: 375px) {
+  .contact__title {
+    width: 13ch;
+    margin-inline: auto;
+  }
+}
 .contact__item {
   display: flex;
   align-items: center;
@@ -571,6 +664,14 @@ main {
     margin-inline: auto;
   }
 }
+@media screen and (max-width: 375px) {
+  .contact__item {
+    font-size: var(--small-font-size);
+  }
+  .contact__item i {
+    display: none;
+  }
+}
 .contact__map {
   border-radius: 0.5rem;
   overflow: hidden;
@@ -578,6 +679,12 @@ main {
 }
 .contact__map iframe {
   display: block;
+}
+@media screen and (max-width: 375px) {
+  .contact__map iframe {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .about {
@@ -614,10 +721,21 @@ main {
 .about__title {
   font-size: var(--subtitle-font-size);
 }
+@media screen and (max-width: 375px) {
+  .about__title {
+    width: 13ch;
+    margin-inline: auto;
+  }
+}
 .about__desc {
   width: 46ch;
   margin-block: 1.5rem;
   line-height: 1.65;
+}
+@media screen and (max-width: 568px) {
+  .about__desc {
+    width: initial;
+  }
 }
 
 /* ==================== DOCUMENTATION ===================== */
@@ -646,6 +764,14 @@ main {
 .documentation__cards::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+@media screen and (max-width: 375px) {
+  .documentation__cards {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-auto-columns: minmax(230px, 1fr);
+    column-gap: 1rem;
+    padding-left: 1rem;
+  }
 }
 .documentation__img {
   border-radius: 0.5rem;
@@ -677,6 +803,14 @@ main {
   max-width: fit-content;
   margin-inline: auto;
 }
+@media screen and (max-width: 375px) {
+  .location__item {
+    font-size: var(--small-font-size);
+  }
+  .location__item i {
+    display: none;
+  }
+}
 .location__map {
   border-radius: 0.5rem;
   overflow: hidden;
@@ -685,6 +819,18 @@ main {
 }
 .location__map iframe {
   display: block;
+}
+@media screen and (max-width: 568px) {
+  .location__map iframe {
+    width: 325px;
+    height: 325px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .location__map iframe {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /* ==================== OFFICE ===================== */
@@ -705,6 +851,11 @@ main {
 @media screen and (max-width: 568px) {
   .office__cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 375px) {
+  .office__cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .office__img {
@@ -739,6 +890,12 @@ main {
     width: 80vw;
   }
 }
+@media screen and (max-width: 375px) {
+  .tracking__info {
+    width: 100%;
+    padding: 1rem;
+  }
+}
 .tracking__info-title {
   font-size: calc(var(--normal-font-size) + 0.25rem);
   margin-bottom: 2.25rem;
@@ -753,6 +910,16 @@ main {
   margin-left: auto;
   color: hsl(0deg, 0%, 25%);
   font-weight: 600;
+}
+@media screen and (max-width: 375px) {
+  .tracking__info-item {
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(var(--normal-font-size) + 0.15rem);
+  }
+  .tracking__info-item span {
+    margin-left: 0;
+  }
 }
 .tracking__detail {
   margin: 4.5rem auto 0;
@@ -793,7 +960,7 @@ main {
   position: relative;
   transform-style: preserve-3d;
 }
-.tracking__detail-item:not(:last-child) span:after {
+.tracking__detail-item:not(:last-child) .break span:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -807,8 +974,16 @@ main {
 .tracking__detail-item.active {
   color: hsl(0deg, 0%, 25%) !important;
 }
-.tracking__detail-item.active span {
+.tracking__detail-item.active .break span {
   background-color: hsl(120deg, 75%, 40%);
+}
+@media screen and (max-width: 1024px) {
+  .tracking__detail-item .break {
+    padding-bottom: 2.5rem;
+  }
+  .tracking__detail-item:not(:last-child) .break span:after {
+    height: 4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .tracking__detail {
@@ -819,6 +994,7 @@ main {
   }
   .tracking__detail-item .break {
     padding-inline: 0.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 568px) {
@@ -829,8 +1005,30 @@ main {
     padding-inline: 0.5rem;
     padding-bottom: 2.5rem;
   }
-  .tracking__detail-item:not(:last-child) span:after {
+  .tracking__detail-item:not(:last-child) .break span:after {
     height: 4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .tracking__detail {
+    margin-top: 2.5rem;
+  }
+  .tracking__detail-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .tracking__detail-item .break {
+    position: absolute;
+    order: -1;
+    padding: 0;
+    left: 0;
+    top: 0;
+  }
+  .tracking__detail-item:not(:last-child) .break span:after {
+    height: 6.5rem;
   }
 }
 
