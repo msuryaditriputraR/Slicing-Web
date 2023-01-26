@@ -21,8 +21,8 @@
   :root {
     --title-font-size: 1.675rem;
     --subtitle-font-size: 1.325rem;
-    --normal-font-size: 1.015rem;
-    --small-font-size: .835rem;
+    --normal-font-size: .925rem;
+    --small-font-size: .815rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -158,6 +158,13 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 568px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+  }
+}
 .footer__copy {
   font-size: var(--smaller-font-size);
   line-height: 2;
@@ -189,6 +196,13 @@ main {
 .home .home__info {
   padding-left: 2.5rem;
 }
+@media screen and (max-width: 568px) {
+  .home .home__info {
+    padding-left: 0;
+    margin-inline: auto;
+    zoom: 1.25;
+  }
+}
 .home .home__title {
   font-size: var(--title-font-size);
   margin-bottom: 1rem;
@@ -213,6 +227,12 @@ main {
   .home .home__title span::after {
     width: 30px;
     height: 15px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .home .home__title span::after {
+    width: 20px;
+    height: 10px;
   }
 }
 .home .home__desc {
@@ -260,6 +280,11 @@ main {
     width: 300px;
   }
 }
+@media screen and (max-width: 568px) {
+  .home__image {
+    display: none;
+  }
+}
 
 /* ==================== SERVICE ===================== */
 .service {
@@ -283,6 +308,11 @@ main {
     text-align: center;
   }
 }
+@media screen and (max-width: 568px) {
+  .service .container {
+    row-gap: 3rem;
+  }
+}
 .service__subtitle {
   color: hsl(247deg, 74%, 64%);
   font-weight: 500;
@@ -292,10 +322,21 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
+@media screen and (max-width: 568px) {
+  .service__cards {
+    gap: 1.5rem;
+  }
+}
 .service__card {
   display: flex;
   column-gap: 1.5rem;
   text-align: left;
+}
+@media screen and (max-width: 568px) {
+  .service__card {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
 .service__card-icon {
   width: 45px;
@@ -381,6 +422,7 @@ main {
 @media screen and (max-width: 768px) {
   .teams__cards {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 .teams__card {
@@ -429,6 +471,14 @@ main {
 }
 .teams__card:nth-child(5) img {
   transform: translateY(10%) translateX(5%);
+}
+@media screen and (max-width: 568px) {
+  .teams__card {
+    padding-top: 1.5rem;
+  }
+  .teams__card-icons {
+    margin-top: 1.5rem;
+  }
 }
 
 /* ==================== CLIENTS ===================== */
@@ -652,6 +702,11 @@ main {
   gap: 2.5rem;
   margin-block: 2.5rem;
 }
+@media screen and (max-width: 568px) {
+  .office__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .office__img {
   border-radius: 0.5rem;
   box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.15);
@@ -672,6 +727,11 @@ main {
 @media screen and (max-width: 768px) {
   .tracking__info {
     width: 65vw;
+  }
+}
+@media screen and (max-width: 568px) {
+  .tracking__info {
+    width: 80vw;
   }
 }
 .tracking__info-title {
@@ -754,6 +814,18 @@ main {
   }
   .tracking__detail-item .break {
     padding-inline: 0.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .tracking__detail-item {
+    font-size: calc(var(--small-font-size));
+  }
+  .tracking__detail-item .break {
+    padding-inline: 0.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .tracking__detail-item:not(:last-child) span:after {
+    height: 4rem;
   }
 }
 

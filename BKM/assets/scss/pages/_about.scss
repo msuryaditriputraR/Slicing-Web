@@ -138,6 +138,12 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
         margin-block: 2.5rem;
+
+        @include breakpoints-down("medium") {
+            & {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     }
 
     &__img {

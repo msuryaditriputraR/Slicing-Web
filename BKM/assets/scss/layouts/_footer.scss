@@ -6,6 +6,14 @@
     .container {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoints-down('medium') {
+            & {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 2.5rem;
+            }
+        }
     }
 
     &__copy {

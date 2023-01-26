@@ -9,6 +9,14 @@
 
     .home__info {
         padding-left: 2.5rem;
+
+        @include breakpoints-down('medium') {
+            & {
+                padding-left: 0;
+                margin-inline: auto;
+                zoom: 1.25;
+            }
+        }
     }
 
     .home__title {
@@ -33,6 +41,12 @@
                 @include breakpoints-down("large") {
                     & {
                         @include box(30px, 15px);
+                    }
+                }
+
+                @include breakpoints-down('medium') {
+                    & {
+                        @include box(20px, 10px);
                     }
                 }
             }
@@ -95,6 +109,12 @@
                 width: 300px;
             }
         }
+
+        @include breakpoints-down('medium') {
+            & {
+                display: none;
+            }
+        }
     }
 }
 
@@ -121,6 +141,12 @@
                 text-align: center;
             }
         }
+
+        @include breakpoints-down('medium') {
+            & {
+                row-gap: 3rem;
+            }
+        }
     }
 
     &__subtitle {
@@ -132,12 +158,25 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
+
+        @include breakpoints-down('medium') {
+            & {
+                gap: 1.5rem;
+            }
+        }
     }
 
     &__card {
         display: flex;
         column-gap: 1.5rem;
         text-align: left;
+
+        @include breakpoints-down('medium') {
+            & {
+                flex-direction: column;
+                row-gap: 1rem;
+            }
+        }
 
         &-icon {
             @include box(45px, 45px, .5rem);
@@ -235,6 +274,7 @@
         @include breakpoints-down('tablet') {
             & {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
             }
         }
     }
@@ -292,6 +332,16 @@
         &:nth-child(5) {
             img {
                 transform: translateY(10%) translateX(5%);
+            }
+        }
+
+        @include breakpoints-down('medium') {
+            & {
+                padding-top: 1.5rem;
+
+                &-icons {
+                    margin-top: 1.5rem;
+                }
             }
         }
     }

@@ -16,6 +16,12 @@
             }
         }
 
+        @include breakpoints-down("medium") {
+            & {
+                width: 80vw;
+            }
+        }
+
         &-title {
             font-size: calc(var(--normal-font-size) + .25rem);
             margin-bottom: 2.25rem;
@@ -107,8 +113,21 @@
                     }
                 }
             }
+        }
 
+        @include breakpoints-down("medium") {
+            &-item {
+                font-size: calc(var(--small-font-size));
 
+                .break {
+                    padding-inline: .5rem;
+                    padding-bottom: 2.5rem;
+                }
+
+                &:not(:last-child) span:after {
+                    height: 4rem;
+                }
+            }
         }
     }
 }
