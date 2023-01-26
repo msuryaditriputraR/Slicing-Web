@@ -49,6 +49,15 @@ function dragToScroll(elemID) {
 dragToScroll("clients-cards");
 dragToScroll("documentation-cards");
 
+/* ==================== SCROLL HEADER ===================== */
+function scrollHeader() {
+    const header = document.getElementById("header");
+
+    header.classList[this.scrollY >= 50 ? "add" : "remove"]("scroll-header");
+}
+
+window.addEventListener("scroll", scrollHeader);
+
 /*=============== SHOW SCROLL UP ===============*/
 function showScrollup(idScrollUp) {
     const scrollUp = document.getElementById(idScrollUp);
