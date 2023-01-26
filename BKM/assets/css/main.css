@@ -4,7 +4,6 @@
   --title-font-size: 2rem;
   --subtitle-font-size: 1.5rem;
   --normal-font-size: 1rem;
-  --navLink-font-size: 1.085rem;
   --small-font-size: .785rem;
   --smaller-font-size: .585rem;
 }
@@ -14,7 +13,6 @@
     --title-font-size: 2.85rem;
     --subtitle-font-size: 2.25rem;
     --normal-font-size: 1.215rem;
-    --navLink-font-size: 1.215rem;
     --small-font-size: .985rem;
     --smaller-font-size: .825rem;
   }
@@ -23,7 +21,6 @@
   :root {
     --title-font-size: 1.675rem;
     --subtitle-font-size: 1.325rem;
-    --navLink-font-size: 1.15rem;
     --normal-font-size: 1.015rem;
     --small-font-size: .835rem;
   }
@@ -39,7 +36,6 @@
   :root {
     --title-font-size: 1.325rem;
     --subtitle-font-size: 1.285rem;
-    --navLink-font-size: 1rem;
     --normal-font-size: .925rem;
   }
 }
@@ -140,7 +136,6 @@ input[type=number] {
 .header .nav .nav__list {
   display: flex;
   column-gap: 2rem;
-  font-size: var(--navLink-font-size);
 }
 .header .nav .nav__link {
   color: hsl(0deg, 0%, 75%);
