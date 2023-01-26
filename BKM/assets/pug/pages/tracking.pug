@@ -24,10 +24,15 @@ block content
                     each td in trackDetails
                         if td.isActive  
                             li.tracking__detail-item.active
+                                =td.left 
+                                .break
+                                    span 
+                                =td.right
                         else 
                             li.tracking__detail-item
                                 =td.left 
-                                span 
+                                .break
+                                    span 
                                 =td.right
 
 
