@@ -1,0 +1,8 @@
+.container {
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+.home-bg {
+  border-radius: 0% 100% 0% 100% / 73% 0% 100% 27%;
+}
