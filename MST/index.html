@@ -4,14 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+
   <title>MST</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+
+  <!--- ==================== CUSTOM CSS ===================== -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <h1 class="text-2xl text-red-500 font-bold">Hello Uno</h1>
+  <!--- ==================== HEADER ===================== -->
+  <header class="fixed w-full z-100 py-4 text-white">
+    <nav class="container flex justify-between items-center">
+      <a href="#" class="flex items-center gap-x-2 font-bold">
+        <img src="assets/img/logo.svg" alt="">
+        MST
+      </a>
+
+      <div>
+        <ul class="flex gap-x-8 font-medium">
+          <li><a href="#home" class="hover:text-white transition text-white">Home</a></li>
+          <li><a href="#features" class="text-[#ACACAC] hover:text-white transition">Features</a></li>
+          <li><a href="#reasons" class="text-[#ACACAC] hover:text-white transition">Reasons</a></li>
+          <li><a href="#alternatives" class="text-[#ACACAC] hover:text-white transition">Alternatives</a></li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-x-4">
+        <a href="#" class="text-[#ACACAC] hover:text-white transition">Daftar</a>
+        <a href="#" class="text-[#0D0E25] bg-white py-2 px-4 rounded-full font-bold shadow shadow-slate-300">Masuk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="h-screen bg-[#0D0E25] home-bg"></div>
+  </main>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js"></script>
