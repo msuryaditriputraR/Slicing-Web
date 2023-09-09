@@ -291,6 +291,11 @@ img {
   right: -6rem;
 }
 
+/* ==================== FEATURES ===================== */
+.features {
+  padding-block: 6.5rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 300px) {
